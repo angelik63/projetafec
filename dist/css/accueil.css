@@ -1,0 +1,17 @@
+h1.site-title{
+   margin-left:50px;  
+}
+
+.box-herbier, .inscription, .box-conseil, .box-forum{
+    box-shadow: var(--box-shadow--section);
+    width: 80%;
+    margin: auto;
+    border-radius:var(--border-radius-box);
+    padding:var(--padding-box);
+}
+#boxRepertoire{
+    box-shadow: var(--box-shadow--section);
+}
+ .inscription{
+    background: linear-gradient(to bottom right, #39ff14 0%,#40e0d0 25%,#ff77c2 50%,#ffffa7 80%);
+ }

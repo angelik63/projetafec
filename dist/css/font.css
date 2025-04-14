@@ -1,0 +1,16 @@
+/* Font  */
+:root{
+    --font-family-title: "Montserrat", sans-serif;
+    
+       --font-weight-title
+  }
+  /* taille */
+  :root{
+    --font-size-title:30px;
+  }
+
+  /* le gras  (c'est la vie)*/
+  :root{
+    --font-weight-title:800;
+  }
+

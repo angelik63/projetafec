@@ -1,0 +1,33 @@
+/* color */
+:root{
+    --color-black:#000000;
+    --color-white:#ffffff;
+    --color-pink:#ff77c2;
+    --color-blue:#40e0d0;
+    --color-green:#39ff14;
+    --color-yellow:#ffffa7;
+        
+}
+
+/* box shadow */
+:root{
+    --box-shadow--button: #000000 2px 8px 5px;
+    --box-shadow--section: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* bordre radius */
+:root{
+    --border-radius-button:15px ;
+    --border-radius-box:10px;
+}
+
+/* taille */
+:root{
+    --width-button:160px;
+    --height-button:28px;
+}
+
+/* marge */
+:root{
+    --padding-box:25px;
+}
