@@ -1,0 +1,51 @@
+h1.site-title {
+  margin-left: 50px;
+}
+
+.box-herbier,
+.inscription,
+.box-conseil, .box-music, .box-bbg {
+  box-shadow: var(--box-shadow--section);
+  width: 80%;
+  margin: auto;
+  border-radius: var(--border-radius-box);
+  padding: var(--padding-box);
+  margin-bottom: 50px;
+}
+#boxRepertoire {
+  box-shadow: var(--box-shadow--section);
+  margin-bottom: 50px;
+  background-color: var(--color-grey);
+  padding-bottom: 25px;
+  border: black solid 2px;
+}
+.box-repertoire{
+    text-align: center;
+    width: 200px;
+    background-color: var(--color-white);
+    margin:var(--margin-box);
+    padding:var(--margin-box);
+    stroke: #dadada 1px mixed;
+    border-radius: var(--border-radius-picture);
+}
+.inscription,
+.box-forum {
+  background: linear-gradient(
+    to bottom right,
+    #39ff14 0%,
+    #40e0d0 25%,
+    #ff77c2 50%,
+    #ffffa7 80%
+  );
+  margin-bottom: 50px;
+}
+
+.question_1,
+.question_3 {
+  background-color: var(--color-white);
+  margin-top: var(--margin-top-box);
+}
+.question_2 {
+  background-color: var(--color-grey);
+  margin-top: var(--margin-top-box);
+}
