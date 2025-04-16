@@ -1,0 +1,76 @@
+h1.site-title {
+  margin-left: 50px;
+}
+
+.intro {
+  font-size: 18px;
+  padding-bottom:$padding-box;
+}
+
+.box-conseil,
+.box-music,
+.box-bbg {
+  @include box-base();
+}
+
+.box-herbier {
+  margin-top: $margin-box;
+  @include box-base();
+}
+
+#boxRepertoire {
+  box-shadow: $box-shadow-section;
+  margin-bottom: 50px;
+  background-color: $color-grey;
+  padding-bottom: 25px;
+  border: black solid 2px;
+
+  h2 {
+    color: $color-green;
+    @include stroke-title();
+    padding: $padding-box;
+  }
+}
+.slide {
+  display: flex;
+  overflow-x: auto;
+}
+.box-repertoire {
+  @include box-slide();
+}
+
+.inscription {
+  @include box-base();
+  @include box-degrade();
+  h2 {
+    color: $color-pink;
+    @include stroke-title();
+  }
+}
+
+.question_1,
+.question_3 {
+  background-color: $color-white;
+  margin-top: $margin-top-box;
+}
+
+.question_2 {
+  background-color: $color-grey;
+  margin-top: $margin-top-box;
+}
+
+.mon-herbier h2 {
+  color: $color-green;
+  @include stroke-title();
+}
+
+.box-conseil h2 {
+  color: $color-pink;
+  @include stroke-title();
+}
+
+.box-forum {
+  @include box-degrade();
+  padding-bottom: $padding-box;
+  padding-top: $padding-box;
+}

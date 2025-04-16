@@ -1,0 +1,22 @@
+/* Font  */
+
+    $font-family-title: "Montserrat", sans-serif;
+    $font-family-base:"arial,sans-serif";
+    $font-family-st: "Lobster", sans-serif;
+    $font-style: normal;
+  
+
+  /* taille */
+  
+    $font-size-title:32px;
+    $font-size-base:16px;
+    $font-size-sm: 14px;
+    $font-size-xs:10px;
+
+    @media (max-width: 480px) {
+      $font-size-base: $font-size-sm;
+    }
+  
+
+  /* le gras  (c'est la vie)*/
+    $font-weight-title:800;

@@ -1,55 +1,306 @@
-@layer reset {
-  *, *:before, *:after {
-    box-sizing: border-box;
-  }
-  html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    -webkit-text-size-adjust: none;
-       -moz-text-size-adjust: none;
-            text-size-adjust: none;
-  }
-  footer, header, nav, section, main {
-    display: block;
-  }
-  body {
-    line-height: 1;
-  }
-  ol, ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  blockquote, q {
-    quotes: none;
-  }
-  blockquote:before, blockquote:after, q:before, q:after {
-    content: "";
-    content: none;
-  }
-  table {
-    border-collapse: collapse;
-    border-spacing: 0;
-  }
-  input {
-    -webkit-appearance: none;
-    border-radius: 0;
-  }
-}
-body {
-  background: var(--primary-color);
+@charset "UTF-8";
+/* box shadow */
+/* taille */
+/* marge */
+/* Font  */
+/* taille */
+/* le gras  (c'est la vie)*/
+*, *:before, *:after {
+  box-sizing: border-box;
 }
 
-:root {
-  --primary-color: #e0e9ff;
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+body {
+  background: var(--primary-color);
 }
 
 .c-section {
   margin-bottom: 50px;
   padding-bottom: 50px;
   border-bottom: 1px solid #dadada;
-}/*# sourceMappingURL=base.css.map */
+}
+
+.btn_ajout {
+  box-shadow: #000000 2px 8px 5px;
+  border-radius: 15px;
+  width: 160px;
+  height: 28px;
+  margin-top: 20px;
+}
+
+.box-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.box-footer ul {
+  padding-top: 20px;
+}
+.box-footer li {
+  padding-bottom: 5px;
+  text-align: center;
+}
+.box-footer_title {
+  font-size: 14px;
+  justify-content: center;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.footer-copyright {
+  text-align: center;
+  align-items: center;
+  padding: 25px;
+}
+
+.site-header {
+  background-color: black;
+  display: flex;
+}
+.site-header ul {
+  margin-right: 5em;
+  margin-top: 4em;
+  margin-left: -2em;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 20px;
+}
+.site-header ul .img {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#logo {
+  border-radius: 90px;
+  margin-left: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.site-header img:first-child {
+  margin-right: auto;
+}
+
+.breadcrumb {
+  list-style: none;
+  background-color: transparent;
+  padding: 50px 0;
+}
+
+.breadcrumb ul li {
+  display: inline;
+  font-size: 18px;
+  color: var(--color-black);
+}
+
+.breadcrumb ul li a {
+  color: var(--color-black);
+  text-decoration: none;
+}
+
+.breadcrumb ul li + li:before {
+  padding: 8px;
+  color: rgb(3, 3, 3);
+  content: ">";
+}
+
+@media (max-width: 768px) {
+  .breadcrumb {
+    padding: 20px 0;
+  }
+  .breadcrumb ul li {
+    font-size: 16px;
+  }
+  .breadcrumb ul li + li:before {
+    padding: 4px;
+  }
+}
+.container {
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.container-fullwidth {
+  max-width: 100%;
+}
+
+h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 15px;
+  font-family: "Lobster", sans-serif;
+}
+
+footer {
+  background-color: #dadada;
+  font-size: 10px;
+}
+
+h1.site-title {
+  margin-left: 50px;
+}
+
+.intro {
+  font-size: 18px;
+  padding-bottom: 25px;
+}
+
+.box-conseil,
+.box-music,
+.box-bbg {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  width: 80%;
+  margin: auto;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 50px;
+  border: 2px solid black;
+}
+
+.box-herbier {
+  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  width: 80%;
+  margin: auto;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 50px;
+  border: 2px solid black;
+}
+
+#boxRepertoire {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  margin-bottom: 50px;
+  background-color: #dadada;
+  padding-bottom: 25px;
+  border: black solid 2px;
+}
+#boxRepertoire h2 {
+  color: #39ff14;
+  -webkit-text-stroke-width: 1.8px;
+  -webkit-text-stroke-color: #000000;
+  padding: 25px;
+}
+
+.slide {
+  display: flex;
+  overflow-x: auto;
+}
+
+.box-repertoire {
+  text-align: center;
+  width: 200px;
+  background-color: #ffffff;
+  margin: 20px;
+  padding: 20px;
+  stroke: #dadada 1px mixed;
+  border-radius: 6px;
+}
+
+.inscription {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  width: 80%;
+  margin: auto;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 50px;
+  border: 2px solid black;
+  background: linear-gradient(to bottom right, #39ff14 0%, #40e0d0 25%, #ff77c2 50%, #ffffa7 80%);
+  margin-bottom: 50px;
+}
+.inscription h2 {
+  color: #ff77c2;
+  -webkit-text-stroke-width: 1.8px;
+  -webkit-text-stroke-color: #000000;
+}
+
+.question_1,
+.question_3 {
+  background-color: #ffffff;
+  margin-top: 20px;
+}
+
+.question_2 {
+  background-color: #dadada;
+  margin-top: 20px;
+}
+
+.mon-herbier h2 {
+  color: #39ff14;
+  -webkit-text-stroke-width: 1.8px;
+  -webkit-text-stroke-color: #000000;
+}
+
+.box-conseil h2 {
+  color: #ff77c2;
+  -webkit-text-stroke-width: 1.8px;
+  -webkit-text-stroke-color: #000000;
+}
+
+.box-forum {
+  background: linear-gradient(to bottom right, #39ff14 0%, #40e0d0 25%, #ff77c2 50%, #ffffa7 80%);
+  margin-bottom: 50px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+
+.box-connexion {
+  background: linear-gradient(to bottom right, #39ff14 0%, #40e0d0 25%, #ff77c2 50%, #ffffa7 80%);
+  margin-bottom: 50px;
+  box-shadow: var(--box-shadow--section);
+  width: 80%;
+  margin: auto;
+  border-radius: var(--border-radius-box);
+  padding: var(--padding-box);
+  margin-bottom: 50px;
+  border: 2px solid black;
+}
+
+/* shame : css à trier *//*# sourceMappingURL=base.css.map */

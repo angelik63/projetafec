@@ -1,0 +1,18 @@
+.box-connexion{
+    background: linear-gradient(
+        to bottom right,
+        #39ff14 0%,
+        #40e0d0 25%,
+        #ff77c2 50%,
+        #ffffa7 80%
+      );
+      margin-bottom: 50px;
+      box-shadow: var(--box-shadow--section);
+      width: 80%;
+      margin: auto;
+      border-radius: var(--border-radius-box);
+      padding: var(--padding-box);
+      margin-bottom: 50px;
+     border:2px solid black;
+    }
+    

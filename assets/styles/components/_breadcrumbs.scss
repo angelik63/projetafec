@@ -1,0 +1,36 @@
+.breadcrumb {
+    list-style: none;
+    background-color: transparent;
+    padding: 50px 0;  
+  }
+  .breadcrumb ul li {
+    display: inline;
+    font-size: 18px;
+    color: var(--color-black);
+  
+  }
+  .breadcrumb ul li a {
+    color: var(--color-black);
+    text-decoration: none;
+  }
+  
+  .breadcrumb ul li + li:before {
+    padding: 8px;
+    color: rgb(3, 3, 3);
+    content: "\003E";
+  }
+  
+  
+  @media (max-width: 768px) {
+    .breadcrumb {
+      padding: 20px 0;  
+    }
+  
+    .breadcrumb ul li {
+      font-size: 16px;  
+    }
+  
+    .breadcrumb ul li + li:before {
+      padding: 4px;  
+    }
+  }

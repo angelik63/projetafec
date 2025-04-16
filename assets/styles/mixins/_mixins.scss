@@ -1,0 +1,51 @@
+@mixin base-btn{
+    box-shadow: $box-shadow-btn;
+    border-radius: $box-radius-btn;
+    width: $width-btn;
+    height: $height-btn;
+    margin-top: $margin-top-box;
+}
+
+@mixin box-degrade ($color1: #39ff14, $color2: #40e0d0, $color3: #ff77c2, $color4: #ffffa7) {
+  
+    background: linear-gradient(
+      to bottom right,
+      $color1 0%,
+      $color2 25%,
+      $color3 50%,
+      $color4 80%
+    );
+
+    margin-bottom: 50px;
+   
+}
+
+@mixin stroke-title{
+  -webkit-text-stroke-width: 1.8px;
+  -webkit-text-stroke-color: $color-black;
+}
+
+@mixin box-base{
+  box-shadow: $box-shadow-section;
+  width: 80%;
+  margin: auto;
+  border-radius: $border-radius-box;
+  padding: $padding-box;
+  margin-bottom: 50px;
+  border:2px solid black;
+  
+}
+
+@mixin box-slide{
+  text-align: center;
+  width: 200px;
+  background-color: $color-white;
+  margin:$margin-box;
+  padding:$margin-box;
+  stroke: #dadada 1px mixed;
+  border-radius:$border-radius-picture;
+}
+
+@mixin card-slide{
+
+}

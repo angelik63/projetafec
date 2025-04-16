@@ -1,7 +1,36 @@
-@use 'elements/reset';
-@use 'elements/document';
+// Settings
+@import 'settings/variable';
+@import 'settings/config.fonts';
 
-@use 'settings/config.colors';
+// Document
+@import 'elements/reset';
+@import 'elements/document';
 
-@use 'components/sections';
+// Mixins
+@import 'mixins/mixins';
 
+
+
+
+// Components
+@import 'components/sections';
+@import 'components/button';
+@import 'components/footer';
+@import 'components/header';
+@import 'components/breadcrumbs';
+
+
+
+
+// Layout
+@import 'layout/container';
+@import 'layout/headings';
+
+
+// Pages
+
+@import 'pages/home';
+@import 'pages/connexion';
+
+/* shame : css à trier */
+@import 'shame';
