@@ -4,6 +4,7 @@
     width: $width-btn;
     height: $height-btn;
     margin-top: $margin-top-box;
+    
 }
 
 @mixin box-degrade ($color1: #39ff14, $color2: #40e0d0, $color3: #ff77c2, $color4: #ffffa7) {
@@ -23,9 +24,10 @@
 @mixin stroke-title{
   -webkit-text-stroke-width: 1.8px;
   -webkit-text-stroke-color: $color-black;
+  
 }
 
-@mixin box-base{
+@mixin box-base-home{
   box-shadow: $box-shadow-section;
   width: 80%;
   margin: auto;
@@ -34,6 +36,15 @@
   margin-bottom: 50px;
   border:2px solid black;
   
+}
+
+@mixin box-base-connect{
+  box-shadow: $box-shadow-section;
+  margin: auto;
+  border-radius: $border-radius-box;
+  padding: $padding-box;
+  margin-bottom: 50px;
+  border:2px solid black;
 }
 
 @mixin box-slide{
@@ -48,4 +59,11 @@
 
 @mixin card-slide{
 
+}
+
+@mixin input-base{
+  border-radius: $border-radius-input;
+  margin-top: 10px;
+  width: 290px;
+  height: 30px;
 }

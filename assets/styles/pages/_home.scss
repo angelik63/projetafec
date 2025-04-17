@@ -8,14 +8,14 @@ h1.site-title {
 }
 
 .box-conseil,
-.box-music,
-.box-bbg {
-  @include box-base();
+.box-music ,
+.box-bbg{
+  @include box-base-home();
 }
 
 .box-herbier {
   margin-top: $margin-box;
-  @include box-base();
+  @include box-base-home();
 }
 
 #boxRepertoire {
@@ -23,7 +23,7 @@ h1.site-title {
   margin-bottom: 50px;
   background-color: $color-grey;
   padding-bottom: 25px;
-  border: black solid 2px;
+  
 
   h2 {
     color: $color-green;
@@ -40,8 +40,8 @@ h1.site-title {
 }
 
 .inscription {
-  @include box-base();
-  @include box-degrade();
+  @include box-base-home();
+  
   h2 {
     color: $color-pink;
     @include stroke-title();
@@ -73,4 +73,23 @@ h1.site-title {
   @include box-degrade();
   padding-bottom: $padding-box;
   padding-top: $padding-box;
+}
+.box-bbg  {
+  background-image: url("/images/vertueuse.webp") ;
+  background-size:350px;
+  width: 350px;
+  height:350px;
+  margin-bottom: 50px;
+
+  
+}
+.box-music  {
+  background-image: url("/images/music-des-plantes.webp") ;
+  background-size:350px;
+  width: 350px;
+  height:350px;
+  margin-bottom:50px;
+    h2{
+      color:$color-white;
+  }
 }

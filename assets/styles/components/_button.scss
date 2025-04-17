@@ -1,4 +1,11 @@
 .btn_ajout{
     @include base-btn();
-    
+   
+}
+
+.input-mail{
+    @include input-base();
+}
+.input-pdw{
+    @include input-base();
 }
