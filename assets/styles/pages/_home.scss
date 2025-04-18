@@ -7,7 +7,7 @@ h1.site-title {
   padding-bottom:$padding-box;
 }
 
-.box-conseil,
+
 .box-music ,
 .box-bbg{
   @include box-base-home();
@@ -41,7 +41,7 @@ h1.site-title {
 
 .newletter {
   @include box-base-home();
-  background-image: url("/images/petale-fleurs_11zon.webp");
+  
   h2 {
     color: $color-pink;
     @include stroke-title();
@@ -63,11 +63,14 @@ h1.site-title {
   color: $color-green;
   @include stroke-title();
 }
+.box-advice{
+  @include box-base-home();
 
-.box-advice h2 {
+ h2 {
   color: $color-pink;
   @include stroke-title();
  
+}
 }
 
 .box-forum {

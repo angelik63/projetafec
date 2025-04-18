@@ -72,6 +72,20 @@ body {
   margin-top: 20px;
 }
 
+.input-mail {
+  border-radius: 15px;
+  margin-top: 10px;
+  width: 250px;
+  height: 30px;
+}
+
+.input-pdw {
+  border-radius: 15px;
+  margin-top: 10px;
+  width: 250px;
+  height: 30px;
+}
+
 .box-footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -162,8 +176,8 @@ body {
 }
 .container {
   max-width: 1200px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin: 0 auto;
 }
 
@@ -192,7 +206,6 @@ h1.site-title {
   padding-bottom: 25px;
 }
 
-.box-conseil,
 .box-music,
 .box-bbg {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -220,12 +233,12 @@ h1.site-title {
   margin-bottom: 50px;
   background-color: #dadada;
   padding-bottom: 25px;
-  border: black solid 2px;
 }
 #boxRepertoire h2 {
   color: #39ff14;
-  -webkit-text-stroke-width: 1.8px;
+  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #000000;
+  paint-order: stroke fill;
   padding: 25px;
 }
 
@@ -244,7 +257,7 @@ h1.site-title {
   border-radius: 6px;
 }
 
-.inscription {
+.newletter {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   width: 80%;
   margin: auto;
@@ -252,13 +265,13 @@ h1.site-title {
   padding: 25px;
   margin-bottom: 50px;
   border: 2px solid black;
-  background: linear-gradient(to bottom right, #39ff14 0%, #40e0d0 25%, #ff77c2 50%, #ffffa7 80%);
-  margin-bottom: 50px;
+  background-image: url("/images/petale-fleurs_11zon.webp");
 }
-.inscription h2 {
+.newletter h2 {
   color: #ff77c2;
-  -webkit-text-stroke-width: 1.8px;
+  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #000000;
+  paint-order: stroke fill;
 }
 
 .question_1,
@@ -274,14 +287,25 @@ h1.site-title {
 
 .mon-herbier h2 {
   color: #39ff14;
-  -webkit-text-stroke-width: 1.8px;
+  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #000000;
+  paint-order: stroke fill;
 }
 
-.box-conseil h2 {
+.box-advice {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  width: 80%;
+  margin: auto;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 50px;
+  border: 2px solid black;
+}
+.box-advice h2 {
   color: #ff77c2;
-  -webkit-text-stroke-width: 1.8px;
+  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #000000;
+  paint-order: stroke fill;
 }
 
 .box-forum {
@@ -291,16 +315,76 @@ h1.site-title {
   padding-top: 25px;
 }
 
-.box-connexion {
-  background: linear-gradient(to bottom right, #39ff14 0%, #40e0d0 25%, #ff77c2 50%, #ffffa7 80%);
+.box-bbg {
+  background-image: url("/images/vertueuse.webp");
+  background-size: 350px;
+  width: 350px;
+  height: 350px;
   margin-bottom: 50px;
-  box-shadow: var(--box-shadow--section);
-  width: 80%;
+}
+
+.box-music {
+  background-image: url("/images/music-des-plantes.webp");
+  background-size: 350px;
+  width: 350px;
+  height: 350px;
+  margin-bottom: 50px;
+}
+.box-music h2 {
+  color: #ffffff;
+}
+
+.box-connexion {
+  /* @include box-degrade(red,blue ,green ,pink) */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   margin: auto;
-  border-radius: var(--border-radius-box);
-  padding: var(--padding-box);
+  border-radius: 10px;
+  padding: 25px;
   margin-bottom: 50px;
   border: 2px solid black;
 }
 
+.box-inscription {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  margin: auto;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 50px;
+  border: 2px solid black;
+  background-image: url("/images/rejoint-nous.webp");
+  background-size: 350px;
+  width: 350px;
+  height: 350px;
+  margin-bottom: 70px;
+}
+.box-inscription a {
+  color: black;
+}
+
+.wave-text span {
+  display: inline-block;
+  font-size: 2em;
+  animation: wave 4s ease-in-out infinite;
+}
+
+.wave-text span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.wave-text span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.wave-text span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
 /* shame : css à trier *//*# sourceMappingURL=base.css.map */
