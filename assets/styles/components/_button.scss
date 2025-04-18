@@ -5,6 +5,7 @@
 
 .input-mail{
     @include input-base();
+    width: 100%;
 }
 .input-pdw{
     @include input-base();

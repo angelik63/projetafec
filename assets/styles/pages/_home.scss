@@ -4,12 +4,11 @@ h1.site-title {
 
 .intro {
   font-size: 18px;
-  padding-bottom:$padding-box;
+  padding-bottom: $padding-box;
 }
 
-
-.box-music ,
-.box-bbg{
+.box-music,
+.box-bbg {
   @include box-base-home();
 }
 
@@ -23,7 +22,6 @@ h1.site-title {
   margin-bottom: 50px;
   background-color: $color-grey;
   padding-bottom: 25px;
-  
 
   h2 {
     color: $color-green;
@@ -41,36 +39,46 @@ h1.site-title {
 
 .newletter {
   @include box-base-home();
-  
   h2 {
     color: $color-pink;
     @include stroke-title();
   }
 }
-
-.question_1,
-.question_3 {
-  background-color: $color-white;
-  margin-top: $margin-top-box;
+.question {
+  width: 90%;
+  margin: auto;
+  padding: 5px;
+  h3 {
+    font-size: 22px;
+    @include stroke-title;
+    color:$color-blue;
+    font-family: $font-family-st;
+  }
+  .question_1,
+  .question_3 {
+    background-color: $color-white;
+    margin-top: $margin-top-box;
+    padding: $padding-p;
+    border-radius: $border-radius-box;
+  }
+  .question_2 {
+    background-color: $color-grey;
+    margin-top: $margin-top-box;
+    padding: $padding-p;
+    border-radius: $border-radius-box;
+  }
 }
-
-.question_2 {
-  background-color: $color-grey;
-  margin-top: $margin-top-box;
-}
-
 .mon-herbier h2 {
   color: $color-green;
   @include stroke-title();
 }
-.box-advice{
+.box-advice {
   @include box-base-home();
 
- h2 {
-  color: $color-pink;
-  @include stroke-title();
- 
-}
+  h2 {
+    color: $color-pink;
+    @include stroke-title();
+  }
 }
 
 .box-forum {
@@ -78,22 +86,20 @@ h1.site-title {
   padding-bottom: $padding-box;
   padding-top: $padding-box;
 }
-.box-bbg  {
-  background-image: url("/images/vertueuse.webp") ;
-  background-size:350px;
+.box-bbg {
+  background-image: url("/images/vertueuse.webp");
+  background-size: 350px;
   width: 350px;
-  height:350px;
+  height: 350px;
   margin-bottom: 50px;
-
-  
 }
-.box-music  {
-  background-image: url("/images/music-des-plantes.webp") ;
-  background-size:350px;
+.box-music {
+  background-image: url("/images/music-des-plantes.webp");
+  background-size: 350px;
   width: 350px;
-  height:350px;
-  margin-bottom:50px;
-    h2{
-      color:$color-white;
+  height: 350px;
+  margin-bottom: 50px;
+  h2 {
+    color: $color-white;
   }
 }
