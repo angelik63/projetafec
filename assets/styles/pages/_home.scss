@@ -1,5 +1,6 @@
 h1.site-title {
-  margin-left: 50px;
+  display:flex;
+  justify-content: center;
 }
 
 .intro {
@@ -45,27 +46,39 @@ h1.site-title {
   }
 }
 .question {
-  width: 90%;
-  margin: auto;
-  padding: 5px;
+  width: 100%;
+  margin: 0;
+  /* padding: 5px; */
+
   h3 {
     font-size: 22px;
     @include stroke-title;
-    color:$color-blue;
+    color: $color-blue;
     font-family: $font-family-st;
+    text-align: center;
   }
-  .question_1,
-  .question_3 {
+  .question_1 {
     background-color: $color-white;
-    margin-top: $margin-top-box;
     padding: $padding-p;
-    border-radius: $border-radius-box;
+    /* border-radius: $border-radius-box; */
   }
   .question_2 {
     background-color: $color-grey;
     margin-top: $margin-top-box;
     padding: $padding-p;
-    border-radius: $border-radius-box;
+    /*  border-radius: $border-radius-box; */
+    .number-answer {
+      background-color: $color-white;
+    }
+  }
+  .question_3 {
+    background-color: $color-white;
+    margin-top: $margin-top-box;
+    padding: $padding-p;
+    /* border-radius: $border-radius-box; */
+  }
+  .pseudo {
+    margin-left: 50px;
   }
 }
 .mon-herbier h2 {
@@ -85,6 +98,37 @@ h1.site-title {
   @include box-degrade();
   padding-bottom: $padding-box;
   padding-top: $padding-box;
+  border-top: solid 2px black;
+  border-bottom: solid 2px black;
+  h2 {
+    @include stroke-title;
+    color: $color-blue;
+    background-color: $color-grey;
+    @include box-base-home;
+    padding: 10px;
+    border: 1px solid black;
+  }
+
+  .number-answer {
+    width: 60px;
+    height: 60px;
+    background-color: $color-grey;
+    text-align: center;
+    padding-top: $padding-small-box;
+    translate: 0 30%;
+    
+  }
+  .container-box-forum {
+    display: flex;
+    padding-top: 15px;
+    .box-icon {
+      translate: 0 70%;
+    }
+    p {
+      margin-left: $margin-small-box;
+      margin-right: $margin-small-box;
+    }
+  }
 }
 .box-bbg {
   background-image: url("/images/vertueuse.webp");

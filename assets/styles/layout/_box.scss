@@ -1,0 +1,23 @@
+.container-box-icon{
+    width: 40px;
+
+
+    .box-icon{
+    position: relative;
+    img{
+        width: 40px;
+    }
+   
+    }
+
+ .box-icon img:nth-child(2){
+    position:absolute;
+    right:0;
+    opacity:0;
+
+    &:hover{
+        opacity:1;
+    }
+ }
+}
+
