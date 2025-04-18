@@ -22,8 +22,9 @@
 }
 
 @mixin stroke-title{
-  -webkit-text-stroke-width: 1.8px;
+  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: $color-black;
+  paint-order: stroke fill;
   
 }
 

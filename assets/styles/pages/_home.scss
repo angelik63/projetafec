@@ -39,9 +39,9 @@ h1.site-title {
   @include box-slide();
 }
 
-.inscription {
+.newletter {
   @include box-base-home();
-  
+  background-image: url("/images/petale-fleurs_11zon.webp");
   h2 {
     color: $color-pink;
     @include stroke-title();
@@ -64,9 +64,10 @@ h1.site-title {
   @include stroke-title();
 }
 
-.box-conseil h2 {
+.box-advice h2 {
   color: $color-pink;
   @include stroke-title();
+ 
 }
 
 .box-forum {
