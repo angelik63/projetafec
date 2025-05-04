@@ -21,7 +21,7 @@
    
 }
 
-@mixin stroke-title{
+@mixin stroke-title {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: $color-black;
   paint-order: stroke fill;

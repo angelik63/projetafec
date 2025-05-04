@@ -1,7 +1,12 @@
-html {
 
-}
 
 body {
     background: var(--primary-color);
+}
+
+iframe {
+@media (max-width:480px){
+    width:360px;
+
+}
 }

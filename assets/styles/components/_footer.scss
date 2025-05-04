@@ -1,13 +1,24 @@
 .box-footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
+  margin-top: $margin-box;
+ 
   ul {
     padding-top: 20px;
+    
+   
   }
   li {
     padding-bottom: 5px;
     text-align: center;
+    
+  }
+ 
+  a{
+    text-decoration: none;
+    color:$color-black;
+   
+  
   }
 
   &_title {
@@ -15,6 +26,7 @@
     justify-content: center;
     text-align: center;
     padding-top: $padding-top;
+    
   }
 }
 

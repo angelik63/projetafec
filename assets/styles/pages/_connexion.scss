@@ -1,19 +1,16 @@
 .box-connexion{
      /* @include box-degrade(red,blue ,green ,pink) */
-    @include box-base-connect()
-     
-     
-    }
+    @include box-base-connect();
+    margin-top:$margin-box;
+   }
+   
     .box-inscription{ 
       @include box-base-connect(); 
       background-image: url("/images/rejoint-nous.webp") ;
       background-size:350px;
-      width: 350px;
       height:350px;
       margin-bottom:70px;
-      a{
-        color:black;
-      }
+      
     }
 
   

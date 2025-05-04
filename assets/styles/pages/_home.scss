@@ -40,6 +40,7 @@ h1.site-title {
 
 .newletter {
   @include box-base-home();
+  
   h2 {
     color: $color-pink;
     @include stroke-title();
@@ -111,11 +112,12 @@ h1.site-title {
 
   .number-answer {
     width: 60px;
-    height: 60px;
+    height:60px;
     background-color: $color-grey;
     text-align: center;
     padding-top: $padding-small-box;
     translate: 0 30%;
+    font-size:12px;
     
   }
   .container-box-forum {
@@ -136,6 +138,10 @@ h1.site-title {
   width: 350px;
   height: 350px;
   margin-bottom: 50px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: $color-white;
+  paint-order: stroke fill;
+  
 }
 .box-music {
   background-image: url("/images/music-des-plantes.webp");
@@ -145,5 +151,6 @@ h1.site-title {
   margin-bottom: 50px;
   h2 {
     color: $color-white;
+    @include stroke-title;
   }
 }

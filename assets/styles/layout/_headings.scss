@@ -14,3 +14,23 @@ footer{
     margin-bottom: $margin-small-box;
     
 }
+.logo-entre{
+    width: 50px;
+    color: white;
+    margin-left: 250px;
+    margin-top:150px;
+    
+}
+h1{
+    font-size: $font-size-title ;
+    font-weight:$font-weight-title;
+    text-align: center; 
+    margin: $margin-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+iframe{
+    margin-bottom: $margin-box;
+}
