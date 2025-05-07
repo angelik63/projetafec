@@ -1,0 +1,10 @@
+.savoir-plus{
+    display: flex;
+    justify-content: center; 
+    
+    .lien-savoir-plus{
+        color:$color-blue;
+        border:red solid 2px;
+       
+    }
+}
