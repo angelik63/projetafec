@@ -8,15 +8,14 @@ export class Menu {
         this.$html              = document.querySelector('html');
     }
 
-
     renderMenu() {
-        let menuHtml = `<ul>`;
+        let menuHtml = '<ul>';
 
         links.forEach(element => {
             menuHtml += `<li class="menu-item"><a href="${element.url}" title="${element.title}">${element.title}</a></li>`;
         });
 
-        menuHtml += `</ul>`;
+        menuHtml += '</ul>';
 
         this.appendMenu(menuHtml);
     }
@@ -26,20 +25,38 @@ export class Menu {
     }
 
     renderMenuIcons() {
-        let menuHtml = `<ul>`;
+        let menuHtml = '<ul>';
 
         linksIcons.forEach(element => {
             menuHtml += `<li><a class="${element.class}" href="${element.url}"><img src="images/icones/${element.img}" alt="${element.title}"/></a></li>`;
         });
 
-        menuHtml += `</ul>`;
+        menuHtml += '</ul>';
 
         this.appendMenuIcons(menuHtml);
 
+        // Ajouter l'événement après le rendu
+        this.addBurgerClickEvent();
     }
 
     appendMenuIcons(menu) {
         this.menuIconsContainer.innerHTML = menu;
+    }
+
+    addBurgerClickEvent() {
+        const burgers = this.menuIconsContainer.querySelectorAll('.burger');
+        burgers.forEach(burger => {
+            burger.addEventListener('click', (event) => {
+                event.preventDefault();
+                setTimeout(() => {
+                    this.$html.classList.add('switch-menu');
+            
+                    this.$html.classList.toggle('has-menu');
+                   }, 300);
+            
+                   this.$html.classList.remove('switch-menu');
+            });
+        });
     }
 
 }

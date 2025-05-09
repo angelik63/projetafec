@@ -1,34 +1,34 @@
 export const links = [
     {
-        title: "se connecter",
+        title: "Se connecter",
+        url: "connexion.html",
+    },
+    {
+        title: "Accueil",
+        url: "index.html",
+    },
+    {
+        title: "Herbier",
         url: "",
     },
     {
-        title: "accueil",
+        title: "Repertoire",
         url: "",
     },
     {
-        title: "herbier",
+        title: "Conseil",
         url: "",
     },
     {
-        title: "repertoire",
+        title: "Forum",
         url: "",
     },
     {
-        title: "conseil",
-        url: "",
-    },
-    {
-        title: "forum",
-        url: "",
-    },
-    {
-        title: "musique des plantes",
+        title: "Musique des plantes",
         url: "musiqueDesPlantes.html",
     },
     {
-        title: "soin des plantes",
+        title: "Soin des plantes",
         url: "soinDesPlantes.html",
     },
     
@@ -45,7 +45,7 @@ export const linksIcons = [
     {
         title: 'logo user',
         img: 'user.svg',
-        url: '',
+        url: 'connexion.html',
         class: '',
     },
     {

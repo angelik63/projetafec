@@ -21,6 +21,36 @@
  }
 }
 .boxRepertoire__picture img{
-    width:"150px";
-     height:"180px";
+    width:150px;
+    height:180px;
 }
+
+#boxPicture {
+   /*  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin-bottom: 50px;
+    background-color: #dadada;
+    padding-bottom: 25px; */
+    .box-picture{
+        text-align: center;
+        width: 90%;
+        background-color: #ffffff;
+        margin: 20px;
+        padding: 20px;
+        stroke: #dadada 1px mixed;
+        border-radius: 6px;
+        display: flex;
+        
+        &__picture img{
+            width:150px;
+            height:180px;
+            border-radius: $border-radius-picture;
+        }
+        p{
+            margin :10px;
+        }
+        h3{
+            padding: 10px;
+            font-size:$font-size-soustitre ;
+        }
+    }
+  }

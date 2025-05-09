@@ -1,0 +1,86 @@
+
+.titre-page{
+margin: $margin-box;
+padding: $padding-box;
+ 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    background-image: -webkit-linear-gradient(23deg,#e12e4b 26%, #f9e54e 85%);
+    font-weight: 800;
+    line-height: 1; 
+    /* @include stroke-title;   */    
+    
+   
+}
+.form-ajout-plante {
+
+  text-align: center;
+
+  input {
+    border-radius: $border-radius-picture;
+    margin: $margin-box;
+    &[type="date"]{
+    width: $width-btn;
+    height: $height-btn;
+    }
+  }
+
+
+    
+  }
+  .input-text {
+    width: 300px;
+    height: 200px;
+    border:1px solid $color-grey;
+    text-align: center;
+  }
+
+.drop-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height:250px;
+    padding: $padding-top;
+    border: 2px dashed $color-photo;
+    color:$color-photo;
+    cursor: pointer;
+    transition: background .2s ease-in-out,border .2s ease-in-out;
+    
+}   
+.drop-container:hover{
+    background-color:$color-white;
+} 
+.drop-title{
+    color:$color-photo;
+    font-size:  $font-size-soustitre;
+    font-weight: bold;
+    text-align: center;
+}
+input[type=file]{
+    width: 350px;
+    max-width: 100%;
+    color:$color-photo;
+    padding: $padding-small-box;
+   
+    border: 1px solid$color-photo;
+    
+}
+/* input[type=file]:focus{
+    outline: 2px dashed $color-photo;
+    outline-offset: 2px;
+} */
+
+input[type=file]::file-selector-button {
+  margin-right: 8px;
+  border: none;
+  background-color:$color-photo;
+  padding: 8px 12px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: $border-radius-picture;
+}
+/* input[type=file]::file-selector-button:hover {
+  background-color: $color-grey;
+} */

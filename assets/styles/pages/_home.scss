@@ -16,6 +16,17 @@ h1.site-title {
 .box-herbier {
   margin-top: $margin-box;
   @include box-base-home();
+     h2 {
+   /*  color: $color-white;
+    @include stroke-title; */
+    /* margin: $margin-box; */
+/* padding: $padding-box; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    background-image: -webkit-linear-gradient(23deg,#e12e4b 26%, #f9e54e 85%);
+    font-weight: 800;
+    line-height: 1; 
+  }
 }
 
 #boxRepertoire {
@@ -24,10 +35,19 @@ h1.site-title {
   background-color: $color-grey;
   padding-bottom: 25px;
 
-  h2 {
-    color: $color-green;
-    @include stroke-title();
+    h2 {
+    /* color: $color-white; */
+    /* @include stroke-title; */
+  /*   margin: $margin-box;
+padding: $padding-box; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    background-image: -webkit-linear-gradient(23deg,#e12e4b 26%, #f9e54e 85%);
+    font-weight: 800;
+    line-height: 1; 
+  
     padding: $padding-box;
+    
   }
 }
 .slide {
@@ -41,9 +61,16 @@ h1.site-title {
 .newletter {
   @include box-base-home();
   
-  h2 {
-    color: $color-pink;
-    @include stroke-title();
+    h2 {
+  /*   color: $color-white;
+    @include stroke-title; */
+ /*    margin: $margin-box;
+padding: $padding-box; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    background-image: -webkit-linear-gradient(23deg,#e12e4b 26%, #f9e54e 85%);
+    font-weight: 800;
+    line-height: 1; 
   }
 }
 .question {
@@ -82,16 +109,19 @@ h1.site-title {
     margin-left: 50px;
   }
 }
-.mon-herbier h2 {
+/* .mon-herbier h2 {
   color: $color-green;
-  @include stroke-title();
-}
+  /* @include stroke-title(); 
+} */
 .box-advice {
   @include box-base-home();
 
   h2 {
-    color: $color-pink;
-    @include stroke-title();
+     -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    background-image: -webkit-linear-gradient(23deg,#e12e4b 26%, #f9e54e 85%);
+    font-weight: 800;
+    line-height: 1; 
   }
 }
 
@@ -102,12 +132,19 @@ h1.site-title {
   border-top: solid 2px black;
   border-bottom: solid 2px black;
   h2 {
-    @include stroke-title;
-    color: $color-blue;
-    background-color: $color-grey;
+    /* @include stroke-title; */
+   /*  color: $color-blue; */
+    /* background-color: $color-grey; */
     @include box-base-home;
     padding: 10px;
     border: 1px solid black;
+      -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    background-image: -webkit-linear-gradient(23deg,#e12e4b 26%, #f9e54e 85%);
+    font-weight: 800;
+    line-height: 1; 
+    @include stroke-title;
+    
   }
 
   .number-answer {
@@ -138,9 +175,21 @@ h1.site-title {
   width: 350px;
   height: 350px;
   margin-bottom: 50px;
-  -webkit-text-stroke-width: 2px;
+/*   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: $color-white;
-  paint-order: stroke fill;
+  paint-order: stroke fill; */
+   h2 {
+    color: $color-white;
+   /*  @include stroke-title; */
+    margin: $margin-box;
+padding: $padding-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    background-image: -webkit-linear-gradient(23deg,$color-blue 26%, $color-yellow 85%);
+    font-weight: 800;
+    line-height: 1; 
+  }
+  
   
 }
 .box-music {
@@ -151,6 +200,13 @@ h1.site-title {
   margin-bottom: 50px;
   h2 {
     color: $color-white;
-    @include stroke-title;
+/*   @include stroke-title; */
+    margin: $margin-box;
+padding: $padding-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    background-image: -webkit-linear-gradient(23deg,$color-black 26%, $color-pink 85%);
+    font-weight: 900;
+    line-height: 1; 
   }
 }
