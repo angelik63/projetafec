@@ -5,7 +5,10 @@
  
   ul {
     padding-top: 20px;
-    
+    @media (min-width: 1024px){
+      font-size: 12px;
+      
+    }
    
   }
   li {
@@ -22,11 +25,14 @@
   }
 
   &_title {
-    font-size: 14px;
+    font-size: $font-size-sm;
     justify-content: center;
     text-align: center;
     padding-top: $padding-top;
-    
+    @media (min-width: 1024px){
+      font-size: 18px;
+      
+    }
   }
 }
 
@@ -34,4 +40,8 @@
   text-align: center;
   align-items: center;
   padding: $padding-box;
-}
+
+@media (min-width: 1024px){
+      font-size: 12px;
+      
+    }}

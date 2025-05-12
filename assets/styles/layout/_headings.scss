@@ -1,44 +1,56 @@
-h2{
-    font-size: $font-size-title;
-    text-align: center;
-    margin-bottom: 15px;
-    font-family: $font-family-st;
-    
-    
+h2 {
+  font-size: $font-size-soustitre;
+  text-align: center;
+  margin-bottom: 15px;
+  font-family: $font-family-st;
+  @include title-degrade;
+  @media (min-width : 1024px){
+  width: 30%;
+  justify-self: center;
+  text-align: center;
 }
-footer{
-    background-color:$color-grey ;
-    font-size: $font-size-xs;
 }
-.pseudo{
-    color:$color-pseudo;
-    margin-top:$margin-small-box;
-    margin-bottom: $margin-small-box;
-    
+footer {
+  background-color: $color-grey;
+  font-size: $font-size-xs;
 }
-.logo-entre{
-    width: 50px;
-    color: white;
-    margin-left: 250px;
-    margin-top:150px;
-    
+.pseudo {
+  color: $color-pseudo;
+  margin-top: $margin-small-box;
+  margin-bottom: $margin-small-box;
 }
-h1{
-    font-size: $font-size-title ;
-    font-weight:$font-weight-title;
-    text-align: center; 
-    margin: $margin-box;
-    
+.logo-entre {
+  width: 50px;
+  margin-left: 260px;
+  margin-top: 190px;
+  @media (min-width: 1024px) {
+    width: 75px;
+    margin-left: 370px;
+    margin-top: 280px;
+  }
 }
-a{
-    text-decoration: none;
-    color: black;
+h1 {
+  font-size: $font-size-title;
+  font-weight: $font-weight-title;
+  text-align: center;
+  margin: $margin-box;
+  @include title-degrade;
+  background-image: -webkit-linear-gradient(
+    23deg,
+    $color-pink 26%,
+    $color-yellow 85%
+  );
+  display: flex;
+  justify-content: center;
 }
-iframe{
-    margin-bottom: $margin-box;
+a {
+  text-decoration: none;
+  color: black;
 }
-.video{
-    display:flex;
-    justify-content: center;
-    
+iframe {
+  margin-bottom: $margin-box;
+}
+.video {
+  display: flex;
+  justify-content: center;
 }

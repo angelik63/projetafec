@@ -22,7 +22,7 @@
 }
 
 @mixin stroke-title {
-  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: $color-black;
   paint-order: stroke fill;
   
@@ -67,4 +67,23 @@
   margin-top: 10px;
   width: 250px;
   height: 30px;
+}
+
+@mixin title-degrade(){
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    background-image: -webkit-linear-gradient(23deg,#e12e4b 26%, #f9e54e 85%);
+    font-weight: 800;
+    line-height: 1; 
+}
+
+@mixin box-base-home{
+  box-shadow: $box-shadow-section;
+  width: 90%;
+  margin: auto;
+  border-radius: $border-radius-box;
+  padding: $padding-box;
+  margin-bottom: 50px;
+  border:2px solid black;
+
 }

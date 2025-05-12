@@ -1,32 +1,21 @@
-h1.site-title {
-  display:flex;
-  justify-content: center;
-}
-
 .intro {
   font-size: 18px;
   padding-bottom: $padding-box;
+  @media (min-width : 1024px){
+    line-height: $font-line-height;
+  }
 }
 
-.box-music,
-.box-bbg {
-  @include box-base-home();
-}
 
 .box-herbier {
   margin-top: $margin-box;
   @include box-base-home();
-     h2 {
-   /*  color: $color-white;
-    @include stroke-title; */
-    /* margin: $margin-box; */
-/* padding: $padding-box; */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
-    background-image: -webkit-linear-gradient(23deg,#e12e4b 26%, #f9e54e 85%);
-    font-weight: 800;
-    line-height: 1; 
+  @media (min-width : 1024px){
+    line-height: $font-line-height;
   }
+}
+.box-repertoire {
+  @include box-slide();
 }
 
 #boxRepertoire {
@@ -35,42 +24,21 @@ h1.site-title {
   background-color: $color-grey;
   padding-bottom: 25px;
 
-    h2 {
-    /* color: $color-white; */
-    /* @include stroke-title; */
-  /*   margin: $margin-box;
-padding: $padding-box; */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
-    background-image: -webkit-linear-gradient(23deg,#e12e4b 26%, #f9e54e 85%);
-    font-weight: 800;
-    line-height: 1; 
-  
+  h2 {
     padding: $padding-box;
-    
   }
 }
 .slide {
   display: flex;
   overflow-x: auto;
 }
-.box-repertoire {
-  @include box-slide();
-}
+
 
 .newletter {
   @include box-base-home();
-  
-    h2 {
-  /*   color: $color-white;
-    @include stroke-title; */
- /*    margin: $margin-box;
-padding: $padding-box; */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
-    background-image: -webkit-linear-gradient(23deg,#e12e4b 26%, #f9e54e 85%);
-    font-weight: 800;
-    line-height: 1; 
+   @media (min-width : 1024px){
+    
+    line-height: $font-line-height;
   }
 }
 .question {
@@ -109,19 +77,15 @@ padding: $padding-box; */
     margin-left: 50px;
   }
 }
-/* .mon-herbier h2 {
-  color: $color-green;
-  /* @include stroke-title(); 
-} */
+
 .box-advice {
   @include box-base-home();
-
   h2 {
-     -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
-    background-image: -webkit-linear-gradient(23deg,#e12e4b 26%, #f9e54e 85%);
-    font-weight: 800;
-    line-height: 1; 
+    padding-bottom: 10px;
+  }
+  @media (min-width : 1024px){
+    height: 250px;
+    line-height: $font-line-height;
   }
 }
 
@@ -131,31 +95,21 @@ padding: $padding-box; */
   padding-top: $padding-box;
   border-top: solid 2px black;
   border-bottom: solid 2px black;
-  h2 {
-    /* @include stroke-title; */
-   /*  color: $color-blue; */
-    /* background-color: $color-grey; */
-    @include box-base-home;
-    padding: 10px;
-    border: 1px solid black;
-      -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
-    background-image: -webkit-linear-gradient(23deg,#e12e4b 26%, #f9e54e 85%);
-    font-weight: 800;
-    line-height: 1; 
-    @include stroke-title;
-    
-  }
 
   .number-answer {
-    width: 60px;
-    height:60px;
+    width: 58px;
+    height: 50px;
     background-color: $color-grey;
     text-align: center;
     padding-top: $padding-small-box;
-    translate: 0 30%;
-    font-size:12px;
-    
+    /* translate: 0 30%; */
+    font-size: 12px;
+    border-radius: $border-radius-picture;
+    @media (min-width: 1024px){
+      height: 60px;
+      font-size: 14px;
+      
+    }
   }
   .container-box-forum {
     display: flex;
@@ -170,43 +124,63 @@ padding: $padding-box; */
   }
 }
 .box-bbg {
+  @include box-base-home();
   background-image: url("/images/vertueuse.webp");
-  background-size: 350px;
+  background-size: cover;
   width: 350px;
   height: 350px;
   margin-bottom: 50px;
-/*   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: $color-white;
-  paint-order: stroke fill; */
-   h2 {
-    color: $color-white;
-   /*  @include stroke-title; */
-    margin: $margin-box;
-padding: $padding-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
-    background-image: -webkit-linear-gradient(23deg,$color-blue 26%, $color-yellow 85%);
-    font-weight: 800;
-    line-height: 1; 
+  h2{
+  -webkit-text-fill-color:white;
+@include stroke-title;}
+  @media (min-width : 1024px){
+    width: 500px;
+    height: 500px;
+   h2{
+      width: 100%;
+      font-size: 40px;
+    }
   }
-  
-  
 }
 .box-music {
+  @include box-base-home();
   background-image: url("/images/music-des-plantes.webp");
-  background-size: 350px;
+  background-size: cover;
   width: 350px;
   height: 350px;
   margin-bottom: 50px;
-  h2 {
-    color: $color-white;
-/*   @include stroke-title; */
-    margin: $margin-box;
-padding: $padding-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
-    background-image: -webkit-linear-gradient(23deg,$color-black 26%, $color-pink 85%);
-    font-weight: 900;
-    line-height: 1; 
+  h2{
+  -webkit-text-fill-color:white;
+@include stroke-title;}
+  @media (min-width : 1024px){
+    width: 500px;
+    height: 500px;
+    h2{
+      width: 100%;
+      font-size: 40px;
+    }
+  }
+}
+
+
+
+
+.forum h2 {
+  color: $color-blue;
+  background-color: $color-grey;
+  @include box-base-home;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+@media (min-width: 1024px) {
+  .container-decouverte {
+    display: flex;
+    flex-direction: row;
+  }
+  .box-forum{
+   @include box-base-home;
+   width: 90%;
+
   }
 }

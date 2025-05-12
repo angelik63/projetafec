@@ -1,14 +1,6 @@
 
 .titre-page{
-margin: $margin-box;
-padding: $padding-box;
- 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
-    background-image: -webkit-linear-gradient(23deg,#e12e4b 26%, #f9e54e 85%);
-    font-weight: 800;
-    line-height: 1; 
-    /* @include stroke-title;   */    
+    @include title-degrade;
     
    
 }

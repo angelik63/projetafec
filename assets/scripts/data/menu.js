@@ -9,11 +9,11 @@ export const links = [
     },
     {
         title: "Herbier",
-        url: "",
+        url: "herbier.html",
     },
     {
         title: "Repertoire",
-        url: "",
+        url: "repertoire.html",
     },
     {
         title: "Conseil",
