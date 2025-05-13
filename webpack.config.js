@@ -1,3 +1,11 @@
+// Active les traces de dépréciation
+process.traceDeprecation = true;
+
+// Empêche Webpack de planter sur erreur JS fatale
+process.on('uncaughtException', function (err) {
+  console.error('[Webpack] Erreur JS non interceptée :\n', err);
+});
+
 const webpack = require('webpack');
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -25,16 +33,20 @@ module.exports = {
     preferRelative: true,
   },
 
-  stats: isWatch ? 'errors-only' : { children: true },
+  // Affichage plus lisible des erreurs
+  stats: 'minimal',
 
   module: {
     rules: [
       {
         test: /\.js$/,
-        loader: 'esbuild-loader',
-        options: {
-          minify: isProduction, // JS minifié uniquement en prod
-          target: 'es2015',
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'],
+            cacheDirectory: true,
+          },
         },
       },
       {
@@ -95,7 +107,6 @@ module.exports = {
       filename: path.join('..', 'css', '[name].css'),
     }),
 
-    // Minification CSS uniquement en production
     ...(isProduction ? [new CssoWebpackPlugin({ forceMediaMerge: true })] : []),
 
     new LicensePlugin({
@@ -125,4 +136,11 @@ module.exports = {
     : {
         minimize: false,
       },
+
+  // Optionnel : garde le watcher actif même après erreur
+  infrastructureLogging: {
+    level: 'error',
+  },
+
+  bail: false, // ne jamais bloquer le watch
 };
