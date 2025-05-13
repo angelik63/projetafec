@@ -35,13 +35,10 @@ h1 {
   text-align: center;
   margin: $margin-box;
   @include title-degrade;
-  background-image: -webkit-linear-gradient(
-    23deg,
-    $color-pink 26%,
-    $color-yellow 85%
-  );
   display: flex;
   justify-content: center;
+  padding-bottom: $padding-box;
+  margin-top: $margin-top-xl;
 }
 a {
   text-decoration: none;
