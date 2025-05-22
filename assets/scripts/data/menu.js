@@ -2,15 +2,15 @@ export const links = [
    
     {
         title: "Accueil",
-        url: "index.html",
+        url: "index.php",
     },
     {
         title: "Herbier",
-        url: "herbier.html",
+        url: "herbier.php",
     },
     {
         title: "Repertoire",
-        url: "repertoire.html",
+        url: "repertoire.php",
     },
     {
         title: "Conseil",
@@ -22,15 +22,15 @@ export const links = [
     },
     {
         title: "Musique des plantes",
-        url: "musiqueDesPlantes.html",
+        url: "musiqueDesPlantes.php",
     },
     {
         title: "Soin des plantes",
-        url: "soinDesPlantes.html",
+        url: "soinDesPlantes.php",
     },
      {
         title: "Se connecter",
-        url: "connexion.html",
+        url: "connexion.php",
     },
     
 ];

@@ -59,11 +59,11 @@
 
       <section>
         <div class="intro-connect">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit,ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-          id est laborum.
+         Bienvenue, jeune pousse !
+
+Prépare-toi, car ici, on ne va pas te laisser faner dans ton coin. Fini les drames dignes de séries télévisées pour une feuille jaunie ! Tu es sur le point de découvrir le seul site où tes plantes t'enverront des ondes positives (et non des appels au secours en morse). Accroche-toi, ça va bourgeonner sec !
+
+Merci de nous rejoindre dans cette folle aventure où l'on démystifie le monde végétal, une blague à la fois. Prêt à devenir le maître jardinier que tes plantes méritent (et que tes voisins envieront secrètement) ? C'est parti !
         </div>
       </section>
       <div class="container">
@@ -94,8 +94,8 @@
               />
             </div>
             <div>
-              <button type="sumit" class="btn_ajout">Valider</button>
-            </div>
+            <button type="sumit" class="btn_ajout"><a href="#">Valider</a></button>
+          </div>
           </div>
         </section>
         <section class="box-inscription">
@@ -111,33 +111,7 @@
         </section>
       </div>
     </div>
-      <footer>
-        <div class="box-footer">
-          <div class="box-footer-site">
-            <div class="box-footer_title">A propos</div>
-            <ul>
-              <li>Mon herbier</li>
-              <li>Répertoire Botanique</li>
-              <li>Notification rappel</li>
-              <li>Mon compte</li>
-              <li>Forum</li>
-              <li>Se déconnecter</li>
-            </ul>
-          </div>
-          <div class="box-footer-info">
-            <div class="box-footer_title">Informations</div>
-            <ul>
-              <li>A propos</li>
-              <li>Mentions légales</li>
-              <li>Politique de confidentialités</li>
-              <li>Nous contacter</li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-copyright">
-          ©2025 Arroso'Moi - Tous droits réservés
-        </div>
-      </footer>
+<?php include ('layout/footer.php'); ?>
     
       <script defer src="dist/js/theme.js"></script>
   </body>

@@ -2,6 +2,7 @@
     @include base-btn();
     display: flex;
    justify-self: center;  
+   
    a{
     margin: auto;
    }
@@ -20,4 +21,9 @@
 .input-pdw{
 
     @include input-base();
+    @media (min-width : 1024px){
+    width: 500px;
+   margin:$margin-box;
+   display: flex;
+   justify-self: center;}
 }

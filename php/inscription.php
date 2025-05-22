@@ -6,7 +6,7 @@
     <link
       rel="icon"
       type="image/webp"
-      href="/images/logo plante ArrosoMoi_11zon.webp"
+      href="<?php echo images_dir ?>logo plante ArrosoMoi_11zon.webp"
     />
     <meta
       name="description"
@@ -37,7 +37,7 @@
           tile="logo du site ramenant sur la page d'accueil"
         ></a>
         <img
-          src="images/logo plante ArrosoMoi_11zon.webp"
+          src="<?php echo images_dir ?>logo plante ArrosoMoi_11zon.webp"
           id="logo"
           alt="logo plante avec arrosoir"
         />
@@ -131,63 +131,7 @@
         </section>
       </div>
     </div>
-        <footer>
-          <div class="box-footer">
-            <div class="box-footer-site">
-              <div class="box-footer_title">A propos</div>
-              <ul>
-                <li>
-                  <a href="#" title="lien vers la page herbier">Mon herbier</a>
-                </li>
-                <li>
-                  <a href="#" title="lien vers la Répertoire Botanique"
-                    >Répertoire Botanique</a
-                  >
-                </li>
-                <li>
-                  <a href="#" title="lien vers les Notification de rappel"
-                    >Notification rappel</a
-                  >
-                </li>
-                <li>
-                  <a href="#" title="lien vers la page Mon compte"
-                    >Mon compte</a
-                  >
-                </li>
-                <li><a href="#" title="lien vers la page Forum">Forum</a></li>
-                <li><a href="#" title="déconnection">Se déconnecter</a></li>
-              </ul>
-            </div>
-            <div class="box-footer-info">
-              <div class="box-footer_title">Informations</div>
-              <ul>
-                <li>
-                  <a href="#" title="lien vers la page A propos">A propos</a>
-                </li>
-                <li>
-                  <a href="#" title="lien vers les Mentions légales"
-                    >Mentions légales</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    title="lien vers les Politique de confidentialités"
-                    >Politique de confidentialités</a
-                  >
-                </li>
-                <li>
-                  <a href="#" title="lien vers la page contact"
-                    >Nous contacter</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            ©2025 Arroso'Moi - Tous droits réservés
-          </div>
-        </footer>
+<?php include ('layout/footer.php'); ?>
         <script defer src="dist/js/theme.js"></script>
   </body>
 </html>

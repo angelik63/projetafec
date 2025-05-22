@@ -7,3 +7,4 @@ window.addEventListener('DOMContentLoaded', function() {
     Navigation.renderMenu();
     Navigation.renderMenuIcons();
 });
+

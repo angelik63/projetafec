@@ -1,13 +1,14 @@
+<?php
+require_once("config/setting.php");
+?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
     <title>Arroso'Moi</title>
-    <link
-      rel="icon"
-      type="image/webp"
-      href="/images/logo plante ArrosoMoi_11zon.webp"
-    />
+    <link rel="icon" type="image/webp" href="<?php echo images_dir ?>logo plante ArrosoMoi_11zon.webp"/>
     <meta
       name="description"
       content="Site de conseil et de suivi d'arrosage pour vos plantes"
@@ -15,7 +16,7 @@
     <meta name="autor" content="Angel" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="autor" content="Angel" />
-    <link id="main-css" rel="stylesheet" href="dist/css/theme.css" />
+    <link rel="stylesheet" href="<?php echo css_dir ?>theme.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -37,7 +38,7 @@
           tile="logo du site ramenant sur la page d'accueil"
         ></a>
         <img
-          src="images/logo plante ArrosoMoi_11zon.webp"
+          src="<?php echo images_dir ?>logo plante ArrosoMoi_11zon.webp"
           id="logo"
           alt="logo plante avec arrosoir"
         />
@@ -51,7 +52,7 @@
       <section class="site-title">
         <div class="container">
           <h1 class="site-title">
-            <img src="images/ArrosoMoi_11zon.webp" width="300px" />
+            <img src="<?php echo images_dir ?>ArrosoMoi_11zon.webp" width="300px" />
           </h1>
           <div class="intro">
             <p>
@@ -68,7 +69,7 @@
 
       <section class="box-herbier">
         <div class="mon-herbier">
-          <h2><a href="herbier.html">Mon herbier</a></h2>
+          <h2><a href="herbier.php">Mon herbier</a></h2>
           <p>
             Quelle joie d'accueillir une nouvelle plante dans votre jardin
             virtuel ! Racontez-nous tout de cette merveille verte qui vient
@@ -77,7 +78,7 @@
             nouvelle histoire végétale s'épanouisse pleinement sous vos yeux !
           </p>
           <button class="btn_ajout">
-            <a href="ajoutPlante.html">Ajouter une plante</a>
+            <a href="ajoutPlante.php">Ajouter une plante</a>
           </button>
         </div>
       </section>
@@ -87,7 +88,7 @@
           <div class="slide">
             <div class="box-repertoire">
               <div class="boxRepertoire__picture">
-                <img src="images/cactus (2)_11zon.webp" />
+                <img src="<?php echo images_dir ?>cactus.webp" alt="photo d'un cactus dans une tasse"/>
               </div>
               <div class="boxRepertoire__name">
                 <h3>Cactus</h3>
@@ -96,7 +97,7 @@
             </div>
             <div class="box-repertoire">
               <div class="boxRepertoire__picture">
-                <img src="images/lotus_11zon.webp" />
+                <img src="<?php echo images_dir ?>lotus.webp" alt="photo d'un lotus flottant sur l'eau"/>
               </div>
               <div class="boxRepertoire__name">
                 <h3>Lotus</h3>
@@ -106,7 +107,7 @@
 
             <div class="box-repertoire">
               <div class="boxRepertoire__picture">
-                <img src="images/cerisier_11zon.webp" />
+                <img src="<?php echo images_dir ?>cerisier.webp" alt="photo d'une branche de cerisier en fleur"/>
               </div>
               <div class="boxRepertoire__name">
                 <h3>Cerisier</h3>
@@ -115,7 +116,7 @@
             </div>
             <div class="box-repertoire">
               <div class="boxRepertoire__picture">
-                <img src="images/rose_11zon.webp" />
+                <img src="<?php echo images_dir ?>rose.webp" alt="photo d'une rose rouge"/>
               </div>
               <div class="boxRepertoire__name">
                 <h3>Cerisier</h3>
@@ -124,7 +125,7 @@
             </div>
             <div class="box-repertoire">
               <div class="boxRepertoire__picture">
-                <img src="images/camelia_11zon.webp" />
+                <img src="<?php echo images_dir ?>camelia.webp" alt="photo d'un camelia"/>
               </div>
               <div class="boxRepertoire__name">
                 <h3>Cerisier</h3>
@@ -133,7 +134,7 @@
             </div>
             <div class="box-repertoire">
               <div class="boxRepertoire__picture">
-                <img src="images/camelia_11zon.webp" />
+                <img src="<?php echo images_dir ?>camelia.webp" alt="photo d'un camelia"/>
               </div>
               <div class="boxRepertoire__name">
                 <h3>Cerisier</h3>
@@ -142,7 +143,7 @@
             </div>
             <div class="box-repertoire">
               <div class="boxRepertoire__picture">
-                <img src="images/" />
+                <img src="<?php echo images_dir ?>camelia.webp" alt="photo d'un camelia"/>
               </div>
               <div class="boxRepertoire__name">
                 <h3>Cerisier</h3>
@@ -151,7 +152,7 @@
             </div>
             <div class="box-repertoire">
               <div class="boxRepertoire__picture">
-                <img src="images/camelia_11zon.webp" />
+                <img src="<?php echo images_dir ?>camelia.webp" alt="photo d'un camelia" />
               </div>
               <div class="boxRepertoire__name">
                 <h3>Cerisier</h3>
@@ -160,7 +161,7 @@
             </div>
             <div class="box-repertoire">
               <div class="boxRepertoire__picture">
-                <img src="images/camelia_11zon.webp" />
+                <img src="<?php echo images_dir ?>camelia.webp" alt="photo d'un camelia"/>
               </div>
               <div class="boxRepertoire__name">
                 <h3>Cerisier</h3>
@@ -169,7 +170,7 @@
             </div>
             <div class="box-repertoire">
               <div class="boxRepertoire__picture">
-                <img src="images/poirier_11zon.webp" />
+                <img src="<?php echo images_dir ?>poirier.webp" alt="photo d'une branche de poirier en fleur"/>
               </div>
               <div class="boxRepertoire__name">
                 <h3>Cerisier</h3>
@@ -333,8 +334,8 @@
               <div class="container-box-forum">
                 <div class="container-box-icon">
                   <div class="box-icon">
-                    <img src="images/lotus_iconzon.webp" />
-                    <img src="images/icones/lotus.gif" />
+                    <img src="<?php echo images_dir ?>lotus_iconzon.webp" alt="image d'une icone de lotus"/>
+                    <img src="<?php echo images_dir ?>icones/lotus.gif" alt="image d'une icone de lotus animé" />
                   </div>
                 </div>
                 <p>
@@ -351,8 +352,8 @@
               <div class="container-box-forum">
                 <div class="container-box-icon">
                   <div class="box-icon">
-                    <img src="images/tournesol_11zon.webp" />
-                    <img src="images/icones/tournesol.gif" />
+                    <img src="<?php echo images_dir ?>tournesol_11zon.webp" alt="image d'une icone de tournesol"/>
+                    <img src="<?php echo images_dir ?>icones/tournesol.gif" alt="image d'une icone de tournesol animé"/>
                   </div>
                 </div>
                 <p>
@@ -369,8 +370,8 @@
               <div class="container-box-forum">
                 <div class="container-box-icon">
                   <div class="box-icon">
-                    <img src="images/croissant-de-lune_11zon.webp" />
-                    <img src="images/icones/croissant-de-lune.gif" />
+                    <img src="<?php echo images_dir ?>croissant-de-lune_11zon.webp" alt="image d'une icone d'une lune"/>
+                    <img src="<?php echo images_dir ?>icones/croissant-de-lune.gif" alt="image d'une icone d'une lune animé"/>
                   </div>
                 </div>
                 <p>
@@ -387,7 +388,7 @@
       <div class="container-decouverte">
         <section class="box-music">
           <div class="music">
-            <a href="musiqueDesPlantes.html">
+            <a href="musiqueDesPlantes.php">
               <h2>Découverte de la musique des plantes</h2>
               <svg
                 class="logo-entre"
@@ -497,55 +498,7 @@ l145 -23 10850 0 c10361 0 10856 1 10975 18 847 121 1569 590 2018 1310 231
         </section>
       </div>
     </main>
-    <footer>
-      <div class="box-footer">
-        <div class="box-footer-site">
-          <div class="box-footer_title">A propos</div>
-          <ul>
-            <li>
-              <a href="#" title="lien vers la page herbier">Mon herbier</a>
-            </li>
-            <li>
-              <a href="#" title="lien vers la Répertoire Botanique"
-                >Répertoire Botanique</a
-              >
-            </li>
-            <li>
-              <a href="#" title="lien vers les Notification de rappel"
-                >Notification rappel</a
-              >
-            </li>
-            <li>
-              <a href="#" title="lien vers la page Mon compte">Mon compte</a>
-            </li>
-            <li><a href="#" title="lien vers la page Forum">Forum</a></li>
-            <li><a href="#" title="déconnection">Se déconnecter</a></li>
-          </ul>
-        </div>
-        <div class="box-footer-info">
-          <div class="box-footer_title">Informations</div>
-          <ul>
-            <li><a href="#" title="lien vers la page A propos">A propos</a></li>
-            <li>
-              <a href="#" title="lien vers les Mentions légales"
-                >Mentions légales</a
-              >
-            </li>
-            <li>
-              <a href="#" title="lien vers les Politique de confidentialités"
-                >Politique de confidentialités</a
-              >
-            </li>
-            <li>
-              <a href="#" title="lien vers la page contact">Nous contacter</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-copyright">
-        ©2025 Arroso'Moi - Tous droits réservés
-      </div>
-    </footer>
-    <script defer src="dist/js/theme.js"></script>
+<?php include ('layout/footer.php'); ?>
+    <script defer src="<?php echo js_dir ?>theme.js"></script>
   </body>
 </html>
