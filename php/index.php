@@ -87,7 +87,7 @@
           <div class="slide">
             <div class="box-repertoire">
               <div class="boxRepertoire__picture">
-                <img src="images/cactus.webp" />
+                <img src="images/cactus (2)_11zon.webp" />
               </div>
               <div class="boxRepertoire__name">
                 <h3>Cactus</h3>
@@ -96,7 +96,7 @@
             </div>
             <div class="box-repertoire">
               <div class="boxRepertoire__picture">
-                <img src="images/lotus.webp" />
+                <img src="images/lotus_11zon.webp" />
               </div>
               <div class="boxRepertoire__name">
                 <h3>Lotus</h3>
@@ -106,7 +106,7 @@
 
             <div class="box-repertoire">
               <div class="boxRepertoire__picture">
-                <img src="images/cerisier.webp" />
+                <img src="images/cerisier_11zon.webp" />
               </div>
               <div class="boxRepertoire__name">
                 <h3>Cerisier</h3>
@@ -115,34 +115,7 @@
             </div>
             <div class="box-repertoire">
               <div class="boxRepertoire__picture">
-                <img src="images/rose.webp" />
-              </div>
-              <div class="boxRepertoire__name">
-                <h3>Cerisier</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-              </div>
-            </div>
-            <div class="box-repertoire">
-              <div class="boxRepertoire__picture">
-                <img src="images/camelia.webp" />
-              </div>
-              <div class="boxRepertoire__name">
-                <h3>Cerisier</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-              </div>
-            </div>
-            <div class="box-repertoire">
-              <div class="boxRepertoire__picture">
-                <img src="images/camelia.webp" />
-              </div>
-              <div class="boxRepertoire__name">
-                <h3>Cerisier</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-              </div>
-            </div>
-            <div class="box-repertoire">
-              <div class="boxRepertoire__picture">
-                <img src="images/camelia.webp" />
+                <img src="images/rose_11zon.webp" />
               </div>
               <div class="boxRepertoire__name">
                 <h3>Cerisier</h3>
@@ -160,7 +133,34 @@
             </div>
             <div class="box-repertoire">
               <div class="boxRepertoire__picture">
-                <img src="images/camelia.webp" />
+                <img src="images/camelia_11zon.webp" />
+              </div>
+              <div class="boxRepertoire__name">
+                <h3>Cerisier</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+              </div>
+            </div>
+            <div class="box-repertoire">
+              <div class="boxRepertoire__picture">
+                <img src="images/" />
+              </div>
+              <div class="boxRepertoire__name">
+                <h3>Cerisier</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+              </div>
+            </div>
+            <div class="box-repertoire">
+              <div class="boxRepertoire__picture">
+                <img src="images/camelia_11zon.webp" />
+              </div>
+              <div class="boxRepertoire__name">
+                <h3>Cerisier</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+              </div>
+            </div>
+            <div class="box-repertoire">
+              <div class="boxRepertoire__picture">
+                <img src="images/camelia_11zon.webp" />
               </div>
               <div class="boxRepertoire__name">
                 <h3>Cerisier</h3>

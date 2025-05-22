@@ -21,7 +21,7 @@
     
   }
   .input-text {
-    width: 300px;
+    width: 90%;
     height: 200px;
     border:1px solid $color-grey;
     text-align: center;
@@ -33,16 +33,18 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+    width: 90%;
+    margin: auto;
     height:250px;
     padding: $padding-top;
     border: 2px dashed $color-photo;
-    color:$color-photo;
+    color:$color-photo; //texte aucun fichier choisi voir comment le faire disparaitre
     cursor: pointer;
     transition: background .2s ease-in-out,border .2s ease-in-out;
     
 }   
 .drop-container:hover{
-    background-color:$color-white;
+    background-color:$color-grey;
 } 
 .drop-title{
     color:$color-photo;
@@ -51,12 +53,12 @@
     text-align: center;
 }
 input[type=file]{
-    width: 350px;
-    max-width: 100%;
-    color:$color-photo;
-    padding: $padding-small-box;
+    /* width: 350px; */
+   /*  max-width: 100%; */
+    /* color:$color-photo; */
+    /* padding: $padding-small-box; */
    
-    border: 1px solid$color-photo;
+   /*  border: 1px solid$color-photo; */
     
 }
 /* input[type=file]:focus{

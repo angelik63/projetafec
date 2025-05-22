@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Arroso'Moi</title>
+    <link
+      rel="icon"
+      type="image/webp"
+      href="/images/logo plante ArrosoMoi_11zon.webp"
+    />
+    <meta
+      name="description"
+      content="Site de conseil et de suivi d'arrosage pour vos plantes"
+    />
+    <meta name="autor" content="Angel" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="autor" content="Angel" />
+    <link id="main-css" rel="stylesheet" href="dist/css/theme.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="site-header">
+        <a
+          href="index.html"
+          tile="logo du site ramenant sur la page d'accueil"
+        ></a>
+        <img
+          src="images/logo plante ArrosoMoi_11zon.webp"
+          id="logo"
+          alt="logo plante avec arrosoir"
+        />
+
+        <nav class="logo-header" id="menu-icons-js"></nav>
+
+        <nav class="nav" id="menu-js"></nav>
+      </div>
+    </header>
+    <main>
+      <section class="site-title">
+        <div class="container">
+          <h1>Découvertes de la musique des plantes</h1>
+        </div>
+        <section class="box-advice">
+          <div>
+            <h2>La musique des plantes</h2>
+            <p>
+              Imagine les plantes murmurer des mélodies secrètes, faites
+              d'électricité. Des machines magiques transforment ces "chants"
+              invisibles en musique. Un rosier au soleil devient une douce
+              rêverie sonore, un chêne puissant vibre d'un rythme profond. C'est
+              écouter le cœur électrique et la beauté cachée du monde végétal.
+            </p>
+          </div>
+        </section>
+        <div class="video"><iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/edlU24dhedE?si=hww-Fvl8MfYA1dMG"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe></div>
+
+        <div class="savoir-plus">
+          Pour en savoir plus
+          <div class="lien-savoir-plus"><a href="https://www.musiquedesplantes.fr/"
+            >www.musiquedesplantes.fr/</a
+          ></div>
+        </div>
+      </main>
+        <footer>
+          <div class="box-footer">
+            <div class="box-footer-site">
+              <div class="box-footer_title">A propos</div>
+              <ul>
+                <li>
+                  <a href="#" title="lien vers la page herbier">Mon herbier</a>
+                </li>
+                <li>
+                  <a href="#" title="lien vers la Répertoire Botanique"
+                    >Répertoire Botanique</a
+                  >
+                </li>
+                <li>
+                  <a href="#" title="lien vers les Notification de rappel"
+                    >Notification rappel</a
+                  >
+                </li>
+                <li>
+                  <a href="#" title="lien vers la page Mon compte"
+                    >Mon compte</a
+                  >
+                </li>
+                <li><a href="#" title="lien vers la page Forum">Forum</a></li>
+                <li><a href="#" title="déconnection">Se déconnecter</a></li>
+              </ul>
+            </div>
+            <div class="box-footer-info">
+              <div class="box-footer_title">Informations</div>
+              <ul>
+                <li>
+                  <a href="#" title="lien vers la page A propos">A propos</a>
+                </li>
+                <li>
+                  <a href="#" title="lien vers les Mentions légales"
+                    >Mentions légales</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    title="lien vers les Politique de confidentialités"
+                    >Politique de confidentialités</a
+                  >
+                </li>
+                <li>
+                  <a href="#" title="lien vers la page contact"
+                    >Nous contacter</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            ©2025 Arroso'Moi - Tous droits réservés
+          </div>
+        </footer>
+        <script defer src="dist/js/theme.js"></script>
+      
+    
+  </body>
+</html>

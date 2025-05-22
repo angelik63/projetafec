@@ -44,9 +44,10 @@ html {
   .nav {
     position: fixed;
     width: 90vw;
-    height: 100vh;
+    height: 80vh;
     background: #111;
-    padding: 50px;
+    opacity: 0.95;
+    padding: 60px;
     z-index: var(--z-index-nav, 99999);
     transform: translateX(-100%);
     top: 0;
@@ -54,14 +55,30 @@ html {
     
     ul {
       li {
-        font-size: 24px;
+        font-size: 26px;
+      
 
         &:not(:last-of-type) {
           margin-bottom: 15px;
         }
+       
 
         a {
-          color: #fff;
+          
+          @include title-degrade;
+           &::after{
+          content:"";
+          display:block;
+          position: absolute;
+          width: 0%;
+          height: 3px;
+          background: linear-gradient(23deg,#e12e4b 26%, #d8c21f 85%);;
+          transform: scale (0);
+          transition: width 0.2s ease-in-out;
+        }
+        &:hover::after {
+          width: 60%;
+        }
         }
       }
     }

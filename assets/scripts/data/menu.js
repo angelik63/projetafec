@@ -1,8 +1,5 @@
 export const links = [
-    {
-        title: "Se connecter",
-        url: "connexion.html",
-    },
+   
     {
         title: "Accueil",
         url: "index.html",
@@ -30,6 +27,10 @@ export const links = [
     {
         title: "Soin des plantes",
         url: "soinDesPlantes.html",
+    },
+     {
+        title: "Se connecter",
+        url: "connexion.html",
     },
     
 ];

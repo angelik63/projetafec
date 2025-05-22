@@ -2,6 +2,9 @@
      /* @include box-degrade(red,blue ,green ,pink) */
     @include box-base-connect();
     margin-top:$margin-box;
+    .h2{
+     
+    }
    }
    
     .box-inscription{ 
@@ -9,17 +12,20 @@
       background-image: url("/images/rejoint-nous.webp") ;
       background-size:350px;
       height:350px;
-      margin-bottom:70px;
-      
+      margin-bottom:60px;
+      @media (min-width : 1024px){
+        background-size: 400px;
+      }
     }
-
   
   .wave-text span {
       display: inline-block;
       font-size: 2em;
       animation: wave 4s ease-in-out infinite;
+      @include title-degrade;
+     
       
-  }
+   
   
   .wave-text span:nth-child(1) {
       animation-delay: 0s;
@@ -41,4 +47,4 @@
           transform: translateY(-20px);
       }
   }
-  
+}
