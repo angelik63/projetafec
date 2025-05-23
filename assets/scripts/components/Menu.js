@@ -1,3 +1,5 @@
+
+
 import { links, linksIcons } from "../data/menu";
 
 export class Menu {

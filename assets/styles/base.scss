@@ -6,6 +6,8 @@
 @import 'elements/reset';
 @import 'elements/document';
 
+
+
 // Mixins
 @import 'mixins/mixins';
 
@@ -21,13 +23,12 @@
 
 
 
-
 // Layout
 @import 'layout/container';
 @import 'layout/headings';
 @import 'layout/wrapper';
 @import 'layout/box';
-
+@import 'layout/accordion';
 
 // Pages
 
@@ -35,6 +36,7 @@
 @import 'pages/connexion';
 @import 'pages/musiqueDesPlantes';
 @import 'pages/ajoutPlante';
+@import 'pages/herbier';
 
 
 // shame : css à trier 

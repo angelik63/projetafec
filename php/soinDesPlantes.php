@@ -1,21 +1,26 @@
+<?php
+require_once("config/setting.php");
+?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
     <title>Arroso'Moi</title>
-    <link
+   <link
       rel="icon"
       type="image/webp"
-      href="/images/logo plante ArrosoMoi_11zon.webp"
+      href="<?php echo images_dir ?>logo plante ArrosoMoi_11zon.webp"
     />
     <meta
       name="description"
       content="Site de conseil et de suivi d'arrosage pour vos plantes"
     />
-    <meta name="autor" content="Angel" />
+    
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="autor" content="Angel" />
-    <link id="main-css" rel="stylesheet" href="dist/css/theme.css" />
+    <meta name="author" content="Angel" />
+    <link rel="stylesheet" href="<?php echo css_dir ?>theme.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,24 +35,7 @@
     />
   </head>
   <body>
-    <header>
-      <div class="site-header">
-        <a
-          href="index.html"
-          tile="logo du site ramenant sur la page d'accueil"
-        >
-        <img
-          src="images/logo plante ArrosoMoi_11zon.webp"
-          id="logo"
-          alt="logo plante avec arrosoir"
-        /></a>
-        
-
-        <nav class="logo-header" id="menu-icons-js"></nav>
-
-        <nav class="nav" id="menu-js"></nav>
-      </div>
-    </header>
+    <?php include ('layout/header.php'); ?>
     <main>
       <section class="site-title">
         <div class="container">
@@ -82,13 +70,17 @@
           allowfullscreen
         ></iframe>
     </div>
-    <div class="savoir-plus">
-            Pour en savoir plus 
-            <a href="https://www.biodynamiseurbotanique.fr/">www.biodynamiseurbotanique.fr/</a>
-        </div>
+ 
+         <div class="savoir-plus">
+
+          <p>Pour en savoir plus</p>
+          <div class="lien-savoir-plus"><a href="https://www.biodynamiseurbotanique.fr/"
+            >www.biodynamiseurbotanique.fr</a
+          ></div>
+          </div>
       </main>
       <?php include ('layout/footer.php'); ?>
-        <script defer src="dist/js/theme.js"></script>
+        <script defer src="<?php echo js_dir ?>theme.js"></script>
    
    
   </body>

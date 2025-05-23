@@ -1,21 +1,26 @@
+<?php
+require_once("config/setting.php");
+?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
     <title>Arroso'Moi</title>
-    <link
+     <link
       rel="icon"
       type="image/webp"
-      href="/images/logo plante ArrosoMoi_11zon.webp"
+      href="<?php echo images_dir ?>logo plante ArrosoMoi_11zon.webp"
     />
     <meta
       name="description"
       content="Site de conseil et de suivi d'arrosage pour vos plantes"
     />
-    <meta name="autor" content="Angel" />
+    <meta name="author" content="Angel" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="autor" content="Angel" />
-    <link id="main-css" rel="stylesheet" href="dist/css/theme.css" />
+ 
+    <link rel="stylesheet" href="<?php echo css_dir ?>theme.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,29 +35,14 @@
     />
   </head>
   <body>
-    <header>
-      <div class="site-header">
-        <a
-          href="index.html"
-          tile="logo du site ramenant sur la page d'accueil"
-        ></a>
-        <img
-          src="images/logo plante ArrosoMoi_11zon.webp"
-          id="logo"
-          alt="logo plante avec arrosoir"
-        />
-
-        <nav class="logo-header" id="menu-icons-js"></nav>
-        <nav class="nav" id="menu-js"></nav>
-      </div>
-    </header>
+<?php include ('layout/header.php'); ?>
     <main>
       <h1>Repertoire Botanique</h1>
         <div id="boxPicture">
         <div class="box-picture">
             <div class="box-picture__picture">
               <img
-                src="images/cactus (2)_11zon.webp"
+                src="<?php echo images_dir ?>cactus (2)_11zon.webp"
                 
               />
             </div>
@@ -64,7 +54,7 @@
         <div class="box-picture">
             <div class="box-picture__picture">
               <img
-                src="images/cactus (2)_11zon.webp"
+                src="<?php echo images_dir ?>cactus.webp"
                 
               />
             </div>
@@ -76,7 +66,7 @@
         <div class="box-picture">
             <div class="box-picture__picture">
               <img
-                src="images/cactus (2)_11zon.webp"
+                src="<?php echo images_dir ?>cactus.webp"
                 
               />
             </div>
@@ -88,7 +78,7 @@
         <div class="box-picture">
             <div class="box-picture__picture">
               <img
-                src="images/cactus (2)_11zon.webp"
+                src="<?php echo images_dir ?>cactus (2)_11zon.webp"
                 
               />
             </div>
@@ -100,7 +90,7 @@
         <div class="box-picture">
             <div class="box-picture__picture">
               <img
-                src="images/cactus (2)_11zon.webp"
+                src="<?php echo images_dir ?>cactus.webp"
                 
               />
             </div>
@@ -112,7 +102,7 @@
         <div class="box-picture">
             <div class="box-picture__picture">
               <img
-                src="images/cactus (2)_11zon.webp"
+                src="<?php echo images_dir ?>cactus.webp"
                 
               />
             </div>
@@ -124,7 +114,7 @@
         <div class="box-picture">
             <div class="box-picture__picture">
               <img
-                src="images/cactus (2)_11zon.webp"
+                src="<?php echo images_dir ?>cactus.webp"
                 
               />
             </div>
@@ -135,6 +125,6 @@
         </div>
     </main>
 <?php include ('layout/footer.php'); ?>
-    <script defer src="dist/js/theme.js"></script>
+    <script defer src="<?php echo js_dir ?>theme.js"></script>
   </body>
 </html>

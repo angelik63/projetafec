@@ -36,7 +36,7 @@
   padding: $padding-box;
   margin-bottom: 50px;
   border:2px solid black;
-  
+
 }
 
 @mixin box-base-connect{
@@ -46,6 +46,7 @@
   padding: $padding-box;
   margin-bottom: 50px;
   border:2px solid black;
+ 
 }
 
 @mixin box-slide{
@@ -86,4 +87,9 @@
   margin-bottom: 50px;
   border:2px solid black;
 
+}
+@mixin box-base-desktop {
+  line-height: $font-line-height;
+      width: 70%;
+ 
 }

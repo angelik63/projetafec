@@ -4,10 +4,10 @@
           <div class="box-footer_title">A propos</div>
           <ul>
             <li>
-              <a href="#" title="lien vers la page herbier" aria-label="accéder à la page mon herbier">Mon herbier</a>
+              <a href="herbier.php" title="lien vers la page herbier" aria-label="accéder à la page mon herbier">Mon herbier</a>
             </li>
             <li>
-              <a href="#" title="lien vers la Répertoire Botanique" aria-label="accéder à la du répertoire botanique"
+              <a href="repertoire.php" title="lien vers la Répertoire Botanique" aria-label="accéder à la du répertoire botanique"
                 >Répertoire Botanique</a
               >
             </li>

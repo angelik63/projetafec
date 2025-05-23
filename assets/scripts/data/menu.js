@@ -46,7 +46,7 @@ export const linksIcons = [
     {
         title: 'logo user',
         img: 'user.svg',
-        url: 'connexion.html',
+        url: 'connexion.php',
         class: '',
     },
     {

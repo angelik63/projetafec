@@ -30,29 +30,13 @@ require_once("config/setting.php");
       rel="stylesheet"
     />
   </head>
+  <?php include ('layout/header.php'); ?>
   <body>
-    <header>
-      <div class="site-header">
-        <a
-          href="index.html"
-          tile="logo du site ramenant sur la page d'accueil"
-        ></a>
-        <img
-          src="<?php echo images_dir ?>logo plante ArrosoMoi_11zon.webp"
-          id="logo"
-          alt="logo plante avec arrosoir"
-        />
-
-        <nav class="logo-header" id="menu-icons-js"></nav>
-
-        <nav class="nav" id="menu-js"></nav>
-      </div>
-    </header>
     <main>
       <section class="site-title">
         <div class="container">
           <h1 class="site-title">
-            <img src="<?php echo images_dir ?>ArrosoMoi_11zon.webp" width="300px" />
+            <img src="<?php echo images_dir ?>ArrosoMoi_11zon.webp" />
           </h1>
           <div class="intro">
             <p>
@@ -84,7 +68,7 @@ require_once("config/setting.php");
       </section>
       <section>
         <div id="boxRepertoire">
-          <h2><a href="repertoire.html">Répertoire Botanique</a></h2>
+          <h2><a href="repertoire.php">Répertoire Botanique</a></h2>
           <div class="slide">
             <div class="box-repertoire">
               <div class="boxRepertoire__picture">
@@ -181,52 +165,7 @@ require_once("config/setting.php");
         </div>
       </section>
       <section class="newletter">
-        <div class="wrapper-newletter">
-          <div class="box-petale">
-            <div style="width: 40px; height: 40px">
-              <span class="dot"></span>
-            </div>
-          </div>
-          <div class="box-petale">
-            <div style="width: 30px; height: 30px">
-              <span class="dot"></span>
-            </div>
-          </div>
-          <div class="box-petale">
-            <div style="width: 20px; height: 20px">
-              <span class="dot"></span>
-            </div>
-          </div>
-          <div class="box-petale">
-            <div style="width: 35px; height: 35px">
-              <span class="dot"></span>
-            </div>
-          </div>
-          <div class="box-petale">
-            <div style="width: 25px; height: 25px">
-              <span class="dot"></span>
-            </div>
-          </div>
-          <div class="box-petale">
-            <div style="width: 40px; height: 40px">
-              <span class="dot"></span>
-            </div>
-          </div>
-          <div class="box-petale">
-            <div style="width: 45px; height: 45px">
-              <span class="dot"></span>
-            </div>
-          </div>
-          <div class="box-petale">
-            <div style="width: 40px; height: 40px">
-              <span class="dot"></span>
-            </div>
-          </div>
-          <div class="box-petale">
-            <div style="width: 30px; height: 30px">
-              <span class="dot"></span>
-            </div>
-          </div>
+        <?php include ('layout/boxPetale.php'); ?>
 
           <h2>Inscription à la Newletter</h2>
           <p>
@@ -443,7 +382,7 @@ l145 -23 10850 0 c10361 0 10856 1 10975 18 847 121 1569 590 2018 1310 231
         </section>
         <section class="box-bbg">
           <div class="bbg">
-            <a href="soinDesPlantes.html">
+            <a href="soinDesPlantes.php">
               <h2>Découverte des soins de façon vertueuse</h2>
               <svg
                 class="logo-entre"
