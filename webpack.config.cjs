@@ -8,6 +8,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const CssoWebpackPlugin = require('csso-webpack-plugin').default;
 const LicensePlugin = require('webpack-license-plugin');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 const isProduction = process.env.NODE_ENV === 'production';
 const isWatch = process.argv.includes('--watch');
@@ -16,7 +17,9 @@ module.exports = {
   mode: isProduction ? 'production' : 'development',
 
   entry: {
-    theme: ['./assets/scripts/base.js', './assets/styles/base.scss'],
+    theme: [
+      './assets/scripts/base.js', './assets/styles/base.scss'
+    ],
   },
 
   output: {
@@ -28,7 +31,17 @@ module.exports = {
     preferRelative: true,
   },
 
-  stats: 'errors-warnings',
+  stats: {
+    all: false,
+    errors: true,
+    builtAt: true,
+    assets: true,
+    timings: true,
+    colors: true,
+    version: false,
+    warnings: false,
+    modules: false,
+  },
 
   module: {
     rules: [
@@ -44,7 +57,6 @@ module.exports = {
           },
         },
       },
-
       {
         test: /\.scss$/,
         use: [
@@ -69,7 +81,6 @@ module.exports = {
           },
         ],
       },
-
       {
         test: /\.css$/,
         use: [
@@ -88,7 +99,6 @@ module.exports = {
           },
         ],
       },
-
       {
         test: /\.(png|woff2?|eot|otf|ttf|svg|jpe?g|gif)(\?[a-z0-9=\.]+)?$/,
         type: 'asset/resource',
@@ -104,11 +114,12 @@ module.exports = {
       filename: path.join('..', 'css', '[name].css'),
     }),
 
-    // ✅ Ajout d’ESLintPlugin pour analyse JS
     new ESLintPlugin({
       extensions: ['js'],
       emitWarning: true,
       failOnError: false,
+      eslintPath: require.resolve('eslint'),
+      context: path.resolve(__dirname, 'assets/scripts'),
     }),
 
     ...(isProduction ? [new CssoWebpackPlugin({ forceMediaMerge: true })] : []),
@@ -120,6 +131,23 @@ module.exports = {
       },
       replenishDefaultLicenseTexts: true,
     }),
+
+    ...(isWatch
+      ? [
+          new BrowserSyncPlugin(
+            {
+              proxy: 'http://localhost:8000', // Change ici si ton serveur PHP est différent
+              files: ['**/*.php'],
+              injectChanges: true,
+              open: false,
+              notify: false,
+            },
+            {
+              reload: false,
+            }
+          ),
+        ]
+      : []),
   ],
 
   optimization: isProduction

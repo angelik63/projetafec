@@ -3,10 +3,30 @@
     display: flex;
    justify-self: center;  
    
-   a{
+   a {
     margin: auto;
    }
 }
+
+.btn {
+    padding: 0.6em 1.5em;
+    font-family: $font-family-st;
+    background: #000;
+    color: #fff;
+    border-radius: 99px;
+    transition: linear background .2s;
+    display: flex;
+    justify-self: center;  
+   
+   a {
+    margin: auto;
+   }
+    
+    &:hover {
+        background: #e12e4b;
+    }
+}
+
 
 .input-mail{
     @include input-base();

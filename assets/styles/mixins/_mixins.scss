@@ -1,10 +1,21 @@
 @mixin base-btn{
     box-shadow: $box-shadow-btn;
-    border-radius: $box-radius-btn;
-    width: $width-btn;
-    height: $height-btn;
-    margin-top: $margin-top-box;
-    
+    border-radius: $box-radius-btn;  
+    padding: 0.4em 1.5em;
+    font-family: $font-family-st;
+    background: #000;
+    color: #fff;
+    transition: linear background .2s;
+    display: flex;
+    justify-self: center;
+    margin-top: 20px; 
+    margin-bottom: 15px; 
+   a {
+    margin: auto;
+   }
+    &:hover {
+        background: #e12e4b;
+    } 
 }
 
 @mixin box-degrade ($color1: #39ff14, $color2: #40e0d0, $color3: #ff77c2, $color4: #ffffa7) {
@@ -75,7 +86,7 @@
     -webkit-text-fill-color:transparent;
     background-image: -webkit-linear-gradient(23deg,#e12e4b 26%, #d8c21f 85%);
     font-weight: 800;
-    line-height: 1; 
+    line-height: 1;
 }
 
 @mixin box-base-home{

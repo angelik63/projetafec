@@ -72,16 +72,45 @@ body {
 }
 
 .btn_ajout {
-  box-shadow: #000000 2px 8px 5px;
-  border-radius: 15px;
-  width: 160px;
-  height: 28px;
+  box-shadow: #544e4e 2px 8px 5px;
+  border-radius: 99px;
+  padding: 0.4em 1.5em;
+  font-family: "Lobster", sans-serif;
+  background: #000;
+  color: #fff;
+  transition: linear background 0.2s;
+  display: flex;
+  justify-self: center;
   margin-top: 20px;
+  margin-bottom: 15px;
   display: flex;
   justify-self: center;
 }
 .btn_ajout a {
   margin: auto;
+}
+.btn_ajout:hover {
+  background: #e12e4b;
+}
+.btn_ajout a {
+  margin: auto;
+}
+
+.btn {
+  padding: 0.6em 1.5em;
+  font-family: "Lobster", sans-serif;
+  background: #000;
+  color: #fff;
+  border-radius: 99px;
+  transition: linear background 0.2s;
+  display: flex;
+  justify-self: center;
+}
+.btn a {
+  margin: auto;
+}
+.btn:hover {
+  background: #e12e4b;
 }
 
 .input-mail {
@@ -198,12 +227,14 @@ html.switch-menu .site-header .nav {
   left: 0;
 }
 .site-header .nav ul li {
+  display: block;
   font-size: 26px;
 }
 .site-header .nav ul li:not(:last-of-type) {
   margin-bottom: 15px;
 }
 .site-header .nav ul li a {
+  display: inline-block;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: -webkit-linear-gradient(23deg, #e12e4b 26%, #d8c21f 85%);
@@ -213,20 +244,13 @@ html.switch-menu .site-header .nav {
 .site-header .nav ul li a::after {
   content: "";
   display: block;
-  position: absolute;
   width: 0%;
   height: 3px;
   background: linear-gradient(23deg, #e12e4b 26%, #d8c21f 85%);
-  transform: scale 0;
   transition: width 0.2s ease-in-out;
 }
 .site-header .nav ul li a:hover::after {
-  width: 60%;
-}
-@media (min-width: 1024px) {
-  .site-header .nav ul li a:hover::after {
-    width: 15%;
-  }
+  width: 100%;
 }
 
 .breadcrumb {
@@ -950,6 +974,7 @@ iframe {
 }
 
 .drop-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -977,27 +1002,16 @@ iframe {
 }
 
 input[type=file] {
-  /* width: 350px; */
-  /*  max-width: 100%; */
-  /* color:$color-photo; */
-  /* padding: $padding-small-box; */
-  /*  border: 1px solid$color-photo; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  visibility: hidden;
 }
 
-/* input[type=file]:focus{
-    outline: 2px dashed $color-photo;
-    outline-offset: 2px;
-} */
-input[type=file]::file-selector-button {
-  margin-right: 8px;
-  border: none;
-  background-color: #222245;
-  padding: 8px 12px;
-  color: #fff;
-  cursor: pointer;
-  border-radius: 6px;
+#title-herbier {
+  width: 180px;
+  margin: auto;
+  padding-top: 40px;
 }
-
-/* input[type=file]::file-selector-button:hover {
-  background-color: $color-grey;
-} */

@@ -1,6 +1,6 @@
 
 
-import { links, linksIcons } from "../data/menu";
+import { links, linksIcons } from "../data/menu.js";
 
 export class Menu {
 
@@ -52,7 +52,6 @@ export class Menu {
                 event.preventDefault();
                 setTimeout(() => {
                     this.$html.classList.add('switch-menu');
-            
                     this.$html.classList.toggle('has-menu');
                    }, 300);
             

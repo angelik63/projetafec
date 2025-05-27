@@ -1,5 +1,11 @@
 <?php
+$pageName = "connexion";
 require_once("config/setting.php");
+
+var_dump($_POST); // Affiche les informations envoyées depuis le formulaire
+
+// $sql => "INSERT INTO MEMBERS SET PASSWORD=$_POST['password'], NAME=$name";
+// $sql=>execute();
 ?>
 
 
@@ -21,7 +27,7 @@ require_once("config/setting.php");
     <meta name="autor" content="Angel" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="autor" content="Angel" />
-   <link rel="stylesheet" href="<?php echo css_dir ?>theme.css" />
+   <link rel="stylesheet" href="<?php echo css_dir ?>theme.css?<?=time()?>" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -70,7 +76,12 @@ require_once("config/setting.php");
               eiusmod tempor incididunt ut labore 
             </p>
             <div>
-              <form>
+              <ul>
+                <li>L'email envoyé est : <?php echo $_POST['user_mail']; ?></li>
+                <li>Le mot de passe: <?php echo $_POST['password']; ?></li>
+              </ul>
+
+              <form method="post">
               <input
                 class="input-mail"
                 type="email"
@@ -122,6 +133,5 @@ require_once("config/setting.php");
       </div>
     </div>
 <?php include ('layout/footer.php'); ?>
-        <script defer src="<?php echo js_dir ?>theme.js"></script>
   </body>
 </html>

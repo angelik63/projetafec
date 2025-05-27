@@ -55,35 +55,31 @@ html {
     
     ul {
       li {
+        display: block;
         font-size: 26px;
-      
-
+        
         &:not(:last-of-type) {
           margin-bottom: 15px;
         }
        
 
         a {
-          
+          display:inline-block;
+
           @include title-degrade;
+
            &::after{
-          content:"";
-          display:block;
-          position: absolute;
-          width: 0%;
-          height: 3px;
-          background: linear-gradient(23deg,#e12e4b 26%, #d8c21f 85%);;
-          transform: scale (0);
-          transition: width 0.2s ease-in-out;
-         
-          
-        }
-        &:hover::after {
-          width: 60%;
-           @media (min-width : 1024px) {
-           width: 15%; 
+            content:"";
+            display: block;
+            width: 0%;
+            height: 3px;
+            background: linear-gradient(23deg,#e12e4b 26%, #d8c21f 85%);
+            transition: width 0.2s ease-in-out;
           }
-        }
+
+          &:hover::after {
+            width: 100%;
+          }
         }
       }
     }

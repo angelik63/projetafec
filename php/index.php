@@ -1,37 +1,15 @@
-<?php
-require_once("config/setting.php");
-?>
-
-
+<?php 
+$pageName = "accueil";
+require_once("config/setting.php"); ?>
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="utf-8" />
+    <?php include("layout/headers.php"); ?>
     <title>Arroso'Moi</title>
-    <link rel="icon" type="image/webp" href="<?php echo images_dir ?>logo plante ArrosoMoi_11zon.webp"/>
-    <meta
-      name="description"
-      content="Site de conseil et de suivi d'arrosage pour vos plantes"
-    />
-    <meta name="autor" content="Angel" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="autor" content="Angel" />
-    <link rel="stylesheet" href="<?php echo css_dir ?>theme.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="description" content="Site de conseil et de suivi d'arrosage pour vos plantes" />
   </head>
-  <?php include ('layout/header.php'); ?>
   <body>
+  <?php include ('layout/header.php'); ?>
     <main>
       <section class="site-title">
         <div class="container">
@@ -61,9 +39,7 @@ require_once("config/setting.php");
             meilleurs soins grâce à un suivi personnalisé, pour que cette
             nouvelle histoire végétale s'épanouisse pleinement sous vos yeux !
           </p>
-          <button class="btn_ajout">
-            <a href="ajoutPlante.php">Ajouter une plante</a>
-          </button>
+         <a href="ajoutPlante.php"><span class="btn_ajout">Ajouter une plante</span></a>
         </div>
       </section>
       <section>
@@ -184,9 +160,7 @@ require_once("config/setting.php");
             />
           </div>
           <div>
-            <button type="sumit" class="btn_ajout">
-              <a href="#">Valider</a>
-            </button>
+            <span class="btn_ajout">Valider</span>
           </div>
         </div>
       </section>
@@ -437,7 +411,6 @@ l145 -23 10850 0 c10361 0 10856 1 10975 18 847 121 1569 590 2018 1310 231
         </section>
       </div>
     </main>
-<?php include ('layout/footer.php'); ?>
-    <script defer src="<?php echo js_dir ?>theme.js"></script>
+    <?php include ('layout/footer.php'); ?>
   </body>
 </html>

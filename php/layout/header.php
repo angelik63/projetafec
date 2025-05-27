@@ -10,8 +10,26 @@
           alt="logo plante avec arrosoir"
         /></a>
 
-        <nav class="logo-header" id="menu-icons-js"></nav>
-
-        <nav class="nav" id="menu-js"></nav>
+         <nav class="logo-header">
+            <ul>
+              <li><img src="<?php echo images_dir ?>icones/search.svg"></li>
+              <li><a href="connexion.php" title="logo qui ramene sur la page de connexion"><img src="<?php echo images_dir ?>icones/user.svg"></a></li>
+              <li><a href="modal-notif.php"><img src="http://projetafec.local/images/icones/bell.svg"></a></li>
+              <li><span class="burger" href=""><img src="<?php echo images_dir ?>burger.svg" ></span></li>
+            </ul>
+          </nav>
+        <nav class="nav">
+          <ul>
+            <?php foreach ($menu as $itemMenu) { ?>
+            <li class="menu-item">
+              <a href="<?php echo $itemMenu['url']; ?>" 
+              <?php echo (isset($pageName) && ($pageName == $itemMenu['pagename'])) ? ' class="selected' : ''; ?>
+              title="<?php echo $itemMenu['title']; ?>">
+                <?php echo $itemMenu['title']; ?>
+              </a>
+            </li>
+            <?php } ?>
+          </ul>
+        </nav>
       </div>
     </header>

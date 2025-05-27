@@ -47,3 +47,4 @@
         ©2025 Arroso'Moi - Tous droits réservés
       </div>
     </footer>
+    <script src="<?php echo js_dir; ?>theme.js?<?=time();?>" defer></script>
