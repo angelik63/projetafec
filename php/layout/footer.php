@@ -1,4 +1,22 @@
     <footer>
+      <div class="dot2">
+            <div class="box-logo">
+            
+              <span class="dot3"></span>
+      <div class="logo-footer">
+        <a
+          href="index.php"
+          tile="logo du site ramenant sur la page d'accueil"
+        >
+        <img
+          src="<?php echo images_dir ?>logo plante ArrosoMoi_11zon.webp"
+          id="logo"
+          alt="logo plante avec arrosoir"
+        /></a>
+  </div>
+            
+          </div>
+  </div>
       <div class="box-footer">
         <div class="box-footer-site">
           <div class="box-footer_title">A propos</div>

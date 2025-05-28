@@ -147,7 +147,6 @@ body {
 .box-footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 20px;
 }
 .box-footer ul {
   padding-top: 20px;
@@ -169,7 +168,6 @@ body {
   font-size: 14px;
   justify-content: center;
   text-align: center;
-  padding-top: 20px;
 }
 @media (min-width: 1024px) {
   .box-footer_title {
@@ -186,6 +184,37 @@ body {
   .footer-copyright {
     font-size: 12px;
   }
+}
+
+.logo-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-footer #logo {
+  width: 80px;
+  border-radius: 90px;
+}
+@media (min-width: 1024px) {
+  .logo-footer #logo {
+    width: 100px;
+  }
+}
+
+.box-logo {
+  border-radius: 90px;
+  width: 105px;
+  height: 105px;
+  background: linear-gradient(to right, #e12e4b, #d8c21f);
+  border: red solid 2px;
+  display: flex;
+  justify-content: center;
+}
+
+.dot2 {
+  border: chartreuse 2px solid;
+  display: flex;
+  justify-content: center;
 }
 
 html.has-menu .site-header .nav {
@@ -747,6 +776,9 @@ iframe {
   .box-forum .number-answer {
     height: 60px;
     font-size: 14px;
+    display: inline;
+    justify-items: end;
+    margin-right: 50px;
   }
 }
 .box-forum .container-box-forum {

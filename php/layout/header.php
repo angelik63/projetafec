@@ -12,6 +12,12 @@
 
          <nav class="logo-header">
             <ul>
+
+              <form  class="search-bar" method="get" action="listing.php" >
+                <input name="keywords" type="search" placeholder="Rechercher une rando, un lieu...">
+                <button type="submit">Go !</button>
+            </form>
+            
               <li><img src="<?php echo images_dir ?>icones/search.svg"></li>
               <li><a href="connexion.php" title="logo qui ramene sur la page de connexion"><img src="<?php echo images_dir ?>icones/user.svg"></a></li>
               <li><a href="modal-notif.php"><img src="http://projetafec.local/images/icones/bell.svg"></a></li>

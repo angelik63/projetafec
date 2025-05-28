@@ -1,4 +1,8 @@
 <?php
+// Connexion à la base de données MySQL
+// http://localhost/phpmyadmin/index.php?route=/sql&db=arroso'moi
+include ('database.php');
+
 define ("css_dir", "http://projetafec.local/dist/css/");
 define ("js_dir", "http://projetafec.local/dist/js/");
 define ("images_dir", "http://projetafec.local/images/");

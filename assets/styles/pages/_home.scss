@@ -55,6 +55,7 @@
     text-align: center;
 
   }
+ 
   .question_1 {
     background-color: $color-white;
     padding: $padding-p;
@@ -109,12 +110,18 @@
     @media (min-width: 1024px){
       height: 60px;
       font-size: 14px;
+      display:inline;
+      justify-items: end;
+      margin-right: 50px;
       
     }
   }
   .container-box-forum {
     display: flex;
     padding-top: 15px;
+    @media (min-width: 1024px) {
+      
+    }
     .box-icon {
       translate: 0 70%;
     }
