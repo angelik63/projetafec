@@ -47,3 +47,35 @@
    display: flex;
    justify-self: center;}
 }
+.search-bar {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+     @media (max-width: 468px){
+   width: 90%;
+  } 
+}
+
+.search-bar input[type="search"] {
+    flex-grow: 1;
+    padding: 12px 15px;
+    border: none;
+    font-size: 1em;
+}
+
+.search-bar button {
+    background-color: $color-orange;
+    color: $color-white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color:$color-orange;
+} 

@@ -1,6 +1,14 @@
 <?php 
 $pageName = "accueil";
-require_once("config/setting.php"); ?>
+require_once("config/setting.php");
+require_once("functions/strings.php");
+
+// Liste des plantes pour "Mon répertoire Botanique"
+$sql = "SELECT * FROM fleurs ORDER BY id DESC limit 12";
+$stmt = $pdo->prepare($sql);
+$stmt->execute();
+$repBotanique = $stmt->fetchAll();
+?>
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -46,97 +54,19 @@ require_once("config/setting.php"); ?>
         <div id="boxRepertoire">
           <h2><a href="repertoire.php">Répertoire Botanique</a></h2>
           <div class="slide">
-            <div class="box-repertoire">
-              <div class="boxRepertoire__picture">
-                <img src="<?php echo images_dir ?>cactus.webp" alt="photo d'un cactus dans une tasse"/>
-              </div>
-              <div class="boxRepertoire__name">
-                <h3>Cactus</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-              </div>
-            </div>
-            <div class="box-repertoire">
-              <div class="boxRepertoire__picture">
-                <img src="<?php echo images_dir ?>lotus.webp" alt="photo d'un lotus flottant sur l'eau"/>
-              </div>
-              <div class="boxRepertoire__name">
-                <h3>Lotus</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-              </div>
-            </div>
-
-            <div class="box-repertoire">
-              <div class="boxRepertoire__picture">
-                <img src="<?php echo images_dir ?>cerisier.webp" alt="photo d'une branche de cerisier en fleur"/>
-              </div>
-              <div class="boxRepertoire__name">
-                <h3>Cerisier</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-              </div>
-            </div>
-            <div class="box-repertoire">
-              <div class="boxRepertoire__picture">
-                <img src="<?php echo images_dir ?>rose.webp" alt="photo d'une rose rouge"/>
-              </div>
-              <div class="boxRepertoire__name">
-                <h3>Cerisier</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-              </div>
-            </div>
-            <div class="box-repertoire">
-              <div class="boxRepertoire__picture">
-                <img src="<?php echo images_dir ?>camelia.webp" alt="photo d'un camelia"/>
-              </div>
-              <div class="boxRepertoire__name">
-                <h3>Cerisier</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-              </div>
-            </div>
-            <div class="box-repertoire">
-              <div class="boxRepertoire__picture">
-                <img src="<?php echo images_dir ?>camelia.webp" alt="photo d'un camelia"/>
-              </div>
-              <div class="boxRepertoire__name">
-                <h3>Cerisier</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-              </div>
-            </div>
-            <div class="box-repertoire">
-              <div class="boxRepertoire__picture">
-                <img src="<?php echo images_dir ?>camelia.webp" alt="photo d'un camelia"/>
-              </div>
-              <div class="boxRepertoire__name">
-                <h3>Cerisier</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-              </div>
-            </div>
-            <div class="box-repertoire">
-              <div class="boxRepertoire__picture">
-                <img src="<?php echo images_dir ?>camelia.webp" alt="photo d'un camelia" />
-              </div>
-              <div class="boxRepertoire__name">
-                <h3>Cerisier</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-              </div>
-            </div>
-            <div class="box-repertoire">
-              <div class="boxRepertoire__picture">
-                <img src="<?php echo images_dir ?>camelia.webp" alt="photo d'un camelia"/>
-              </div>
-              <div class="boxRepertoire__name">
-                <h3>Cerisier</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-              </div>
-            </div>
-            <div class="box-repertoire">
-              <div class="boxRepertoire__picture">
-                <img src="<?php echo images_dir ?>poirier.webp" alt="photo d'une branche de poirier en fleur"/>
-              </div>
-              <div class="boxRepertoire__name">
-                <h3>Cerisier</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-              </div>
-            </div>
+            <?php if ($repBotanique) { ?>
+              <?php foreach ($repBotanique as $fleur) { ?>
+                <div class="box-repertoire">
+                  <div class="boxRepertoire__picture">
+                    <img src="<?php echo $fleur['image']; ?>" alt="<?php echo $fleur['title']; ?>"/>
+                  </div>
+                  <div class="boxRepertoire__name">
+                    <h3><?php echo $fleur['title']; ?></h3>
+                    <p><?php echo truncate($fleur['description'], 50); ?></p>
+                  </div>
+                </div>
+                <?php } ?>
+              <?php } ?>
           </div>
         </div>
       </section>

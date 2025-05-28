@@ -1,8 +1,18 @@
 <?php
-$host = 'localhost';
-$dbname = "plantes";
-$user = 'root';
-$password = '';
+
+$environnement = "local";
+
+if ($environnement == "prod") {
+    $host = 'localhost';
+    $dbname = "plantes";
+    $user = 'root';
+    $password = '';
+} else {
+    $host = 'blobidesafec.mysql.db';
+    $dbname = "blobidesafec";
+    $user = 'blobidesafec';
+    $password = 'Afec2025Dax';
+}
 
 try { 
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $user, $password);

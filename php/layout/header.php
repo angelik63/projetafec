@@ -9,16 +9,15 @@
           id="logo"
           alt="logo plante avec arrosoir"
         /></a>
+        <form  class="search-bar" method="get" action="listing.php" >
+               <input name="keywords" type="search" placeholder="Rechercher une plante">
+               <button type="submit">Go !</button>
+           </form>
 
          <nav class="logo-header">
-            <ul>
-
-              <form  class="search-bar" method="get" action="listing.php" >
-                <input name="keywords" type="search" placeholder="Rechercher une rando, un lieu...">
-                <button type="submit">Go !</button>
-            </form>
             
-              <li><img src="<?php echo images_dir ?>icones/search.svg"></li>
+         <ul>
+              <li><img src="<?php echo images_dir ?>icones/search.svg" alt="Rechercher"></li>
               <li><a href="connexion.php" title="logo qui ramene sur la page de connexion"><img src="<?php echo images_dir ?>icones/user.svg"></a></li>
               <li><a href="modal-notif.php"><img src="http://projetafec.local/images/icones/bell.svg"></a></li>
               <li><span class="burger" href=""><img src="<?php echo images_dir ?>burger.svg" ></span></li>
