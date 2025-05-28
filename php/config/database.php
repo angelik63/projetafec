@@ -1,8 +1,5 @@
 <?php
-
-$environnement = "local";
-
-if ($environnement == "prod") {
+if (ENV == "local") {
     $host = 'localhost';
     $dbname = "plantes";
     $user = 'root';
