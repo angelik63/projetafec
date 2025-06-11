@@ -40,17 +40,24 @@
         border-radius: 6px;
         display: flex;
         
+        
         &__picture img{
             width:150px;
             height:180px;
             border-radius: $border-radius-picture;
+            
+            @media (min-width : 1024px) {
+                width: 220px;
+                height:250px;
+            }
         }
         p{
             margin :10px;
         }
-        h3{
+        h2{
             padding: 10px;
             font-size:$font-size-soustitre ;
+            
         }
     }
   }

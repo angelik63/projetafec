@@ -105,6 +105,7 @@ body {
   transition: linear background 0.2s;
   display: flex;
   justify-self: center;
+  margin-top: 20px;
 }
 .btn a {
   margin: auto;
@@ -177,6 +178,16 @@ body {
 
 .search-bar button:hover {
   background-color: #f8981d;
+}
+
+#myBtn {
+  background-color: #f8981d;
+  color: white;
+  border: solid red 2px;
+}
+
+#myBtn:hover {
+  background-color: chartreuse;
 }
 
 footer {
@@ -423,7 +434,7 @@ footer {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 800;
   text-align: center;
   margin: 20px;
@@ -590,10 +601,16 @@ iframe {
   height: 180px;
   border-radius: 6px;
 }
+@media (min-width: 1024px) {
+  #boxPicture .box-picture__picture img {
+    width: 220px;
+    height: 250px;
+  }
+}
 #boxPicture .box-picture p {
   margin: 10px;
 }
-#boxPicture .box-picture h3 {
+#boxPicture .box-picture h2 {
   padding: 10px;
   font-size: 28px;
 }
@@ -972,15 +989,16 @@ iframe {
   border: 2px solid black;
   background-color: #ffffff;
   background-image: url(../js/309d6d372c718374f301.webp);
-  background-size: cover;
   height: 350px;
   margin-bottom: 60px;
+  background-repeat: no-repeat;
 }
 @media (min-width: 1024px) {
   .box-inscription {
     background-size: 400px;
     background-repeat: no-repeat;
     width: 60%;
+    height: 400px;
   }
 }
 

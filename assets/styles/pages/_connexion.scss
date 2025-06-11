@@ -14,13 +14,15 @@ p{
   @include box-base-connect();
   background-color: $color-white;
   background-image: url("/images/rejoint.webp");
-  background-size: cover;
   height: 350px;
   margin-bottom: 60px;
+  background-repeat: no-repeat;
+
   @media (min-width: 1024px) {
     background-size: 400px;
     background-repeat: no-repeat;
     width: 60%;
+    height: 400px;
   }
 }
 .wave-text{

@@ -17,6 +17,7 @@
     transition: linear background .2s;
     display: flex;
     justify-self: center;  
+    margin-top: $margin-top-box;
    
    a {
     margin: auto;
@@ -79,3 +80,13 @@
 .search-bar button:hover {
     background-color:$color-orange;
 } 
+
+#myBtn {
+    background-color: $color-orange; 
+    color: white;
+    border: solid red 2px;
+}
+
+#myBtn:hover {
+    background-color: chartreuse;
+}

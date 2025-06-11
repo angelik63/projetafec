@@ -57,7 +57,7 @@ Merci de nous rejoindre dans cette folle aventure où l'on démystifie le monde 
               />
             </div>
             <div>
-            <span class="btn">Choisir un fichier</span>
+            <span class="btn">Valider</span>
           </div>
           </div>
         </section>
