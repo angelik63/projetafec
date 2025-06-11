@@ -45,7 +45,6 @@ $repBotanique = $stmt->fetchAll();
                   <div class="box-picture__name">
                     <h2><?php echo $fleur['title']; ?></h2>
                     <p><?php echo truncate($fleur['description'], 200); ?></p>
-                     
                   </div>
                 </div>
               </div>
