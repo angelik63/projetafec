@@ -25,9 +25,7 @@ loadEnv(__DIR__. '/../.env');
 // On récupère l'environnement (local par défaut si non défini)
 $env = getenv('APP_ENV') ?: 'local';
 
-// Connexion à la base de données MySQL
-/* // http://localhost/phpmyadmin/index.php?route=/sql&db=arroso'moi */
-include ('database.php');
+
 
 // Si on est sur le serveur local (xampp)
 if ($env === "local") {
@@ -35,13 +33,27 @@ if ($env === "local") {
     define ("js_dir", "http://projetafec.local/dist/js/");
     define ("images_dir", "http://projetafec.local/images/");
 
+    $host = 'localhost';
+    $dbname = "plantes";
+    $user = 'root';
+    $password = '';
+
 // Si on est sur afecdax.ovh
 } elseif ($env === "prod") {
     define ("css_dir", "https://angelique.afecdax.ovh/dist/css/");
     define ("js_dir", "https://angelique.afecdax.ovh/dist/js/");
     define ("images_dir", "https://angelique.afecdax.ovh/images/");
+    
+    $host = 'blobidesafec.mysql.db';
+    $dbname = "blobidesafec";
+    $user = 'blobidesafec';
+    $password = 'Afec2025Dax';
+    // https://phpmyadmin.hosting.ovh.net/index.php?pma_username=blobidesafec&pma_servername=blobidesafec.mysql.db
 }
 
+// Connexion à la base de données MySQL
+/* // http://localhost/phpmyadmin/index.php?route=/sql&db=arroso'moi */
+include ('database.php');
 
 $menu = array(
     array(
