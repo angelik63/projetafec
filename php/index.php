@@ -4,7 +4,7 @@ require_once("config/setting.php");
 require_once("functions/strings.php");
 
 // Liste des plantes pour "Mon répertoire Botanique"
-$sql = "SELECT * FROM fleurs ORDER BY id DESC limit 12";
+$sql = "SELECT * FROM fleurs ORDER BY id ASC limit 12";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
 $repBotanique = $stmt->fetchAll();
@@ -56,10 +56,14 @@ $repBotanique = $stmt->fetchAll();
           <div class="slide">
             <?php if ($repBotanique) { ?>
               <?php foreach ($repBotanique as $fleur) { ?>
-                <div class="box-repertoire">
-                  <div class="boxRepertoire__picture">
-                    <img src="<?php echo $fleur['image']; ?>" alt="<?php echo $fleur['title']; ?>"/>
-                  </div>
+                <div class="box-repertoire" data-id="<?=$fleur['id']?>">
+                    <?php 
+                    $img_path = "uploads/fleurs/small/" . $fleur['id'] . ".webp";
+                    if (file_exists($img_path)) { ?>
+                      <div class="boxRepertoire__picture">
+                        <img src="<?=$img_path?>" alt="<?php echo $fleur['title']; ?>"/>
+                      </div>
+                    <?php } ?>
                   <div class="boxRepertoire__name">
                     <h3><?php echo $fleur['title']; ?></h3>
                     <p><?php echo truncate($fleur['description'], 50); ?></p>

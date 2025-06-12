@@ -5,7 +5,7 @@ require_once("config/setting.php");
 $keywords = isset($_GET['keywords']) ? trim($_GET['keywords']) : '';
 
 if ($keywords !== '') {
-    $sql = "SELECT * FROM fleurs WHERE title LIKE :kw OR description LIKE :kw";
+    $sql = "SELECT * FROM fleurs WHERE title LIKE :kw";
     $stmt = $pdo->prepare($sql);
     $stmt->execute(['kw' => '%' . $keywords . '%']);
     $results = $stmt->fetchAll();

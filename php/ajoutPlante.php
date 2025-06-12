@@ -20,9 +20,9 @@ require_once("config/setting.php"); ?>
             <div>
               
                 <label for="photo" class="drop-container" id="dropcontainer">
-                  <span class="drop-title">Déposer vos fichiers</span>
-                  ou
-                  <span class="btn">Choisir un fichier</span>
+                  <span class="drop-title">Photo de la plante : Son moment de gloire ! </span>
+                 
+                  <span class="btn">Cliquez pour l'ajouter</span>
               <input
                 type="file"
                 id="photo"
@@ -32,10 +32,16 @@ require_once("config/setting.php"); ?>
             </div>
             <form method="post" name="formAjoutPlante" enctype="multipart/form-data">
               <input
+                class="input-text-name"
+                type="text"
+                name="descriptif"
+                placeholder="nom "
+              />
+              <input
                 class="input-text"
                 type="text"
                 name="descriptif"
-                placeholder="nom et description de la plante"
+                placeholder=" description de la plante"
               />
               <div class="information">Où se situe la plante.</div>
 

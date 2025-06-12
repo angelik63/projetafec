@@ -7,6 +7,7 @@
 .form-ajout-plante {
 
   text-align: center;
+  
 
   input {
     border-radius: $border-radius-picture;
@@ -18,11 +19,21 @@
   }
 
   }
+  .input-text-name {
+    width:220px;
+    height: 30px;
+    text-align:center ;
+    @media(min-width : 1024px){
+      width: 400px;
+      margin-bottom: 50px;
+    }
+  }
   .input-text {
-    width: 90%;
+    width: 60%;
     height: 200px;
     border:1px solid $color-grey;
     text-align: center;
+   
   }
 
 .drop-container{
@@ -32,24 +43,29 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    width: 90%;
+    width: 80%;
     margin: auto;
-    height:250px;
+    height:200px;
     padding: $padding-top;
     border: 2px dashed $color-photo;
     color:$color-photo; //texte aucun fichier choisi voir comment le faire disparaitre
     cursor: pointer;
     transition: background .2s ease-in-out, border .2s ease-in-out;
-    
+    @media(min-width : 1024px){
+      width: 60%;
+      height: 300px;
+      margin-bottom: 50px;
+    }
 }   
 .drop-container:hover{
     background-color:$color-grey;
 } 
 .drop-title{
     color:$color-photo;
-    font-size:  $font-size-soustitre;
+    font-size:  $font-size-h3;
     font-weight: bold;
     text-align: center;
+    font-family:  $font-family-st;
 }
 input[type=file]{
   position: absolute;

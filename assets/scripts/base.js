@@ -1,7 +1,9 @@
 import "./components/MenuAccordion.js";
+import "./components/AfficherPlus.js";
+import "./components/BarreRecherche.js";
 
 // Initialisation du menu sur site Version JS
-import "./components/AfficherPlus.js"
+
 import { Menu } from "./components/Menu.js";
 
 window.addEventListener('DOMContentLoaded', function() {
