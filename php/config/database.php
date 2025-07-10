@@ -1,7 +1,7 @@
 <?php
 if ($env == "local") {
     $host = 'localhost';
-    $dbname = "plantes";
+    $dbname = "test";
     $user = 'root';
     $password = '';
 } elseif ($env==="prod") {

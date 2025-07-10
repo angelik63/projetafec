@@ -12,7 +12,8 @@ footer{
   ul {
     padding-top: 20px;
     @media (min-width: 1024px){
-      font-size: 12px; 
+      font-size: 14px; 
+      font-weight: 600;
     }
    
   }
@@ -43,8 +44,8 @@ footer{
   padding: $padding-box;
 
 @media (min-width: 1024px){
-      font-size: 12px;
-      
+      font-size: 14px;
+      font-weight: 600;
     }}
 
 .logo-footer {

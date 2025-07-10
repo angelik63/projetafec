@@ -13,13 +13,15 @@
                <input name="keywords" type="search" id="plantSearchInput" placeholder="Recherche">
                <button type="submit">Go !</button>
            </form>
-
+<form class="search-bar" style="display: none;">
+        <input type="text" id="plantSearchInput" placeholder="Rechercher">
+    </form>
          <nav class="logo-header">
             
          <ul>
               <li><img id="loupe" src="<?php echo images_dir ?>icones/search.svg" alt="Rechercher"></li>
               <li><a href="connexion.php" title="logo qui ramene sur la page de connexion"><img id="user-icon" src="<?php echo images_dir ?>icones/user.svg"></a></li>
-              <li><a href="modal-notif.php"><img id="bell-icon" src="<?php echo images_dir ?>/icones/bell.svg"></a></li>
+              <li><img id="bell-icon" src="<?php echo images_dir ?>/icones/bell.svg"></li>
               <li><span class="burger" href=""><img src="<?php echo images_dir ?>burger.svg" ></span></li>
             </ul>
           </nav>
@@ -38,3 +40,4 @@
         </nav>
       </div>
     </header>
+   

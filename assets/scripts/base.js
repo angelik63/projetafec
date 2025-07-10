@@ -1,6 +1,7 @@
 import "./components/MenuAccordion.js";
 import "./components/AfficherPlus.js";
 import "./components/BarreRecherche.js";
+import "./components/ModalNotification.js"
 
 // Initialisation du menu sur site Version JS
 

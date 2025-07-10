@@ -21,12 +21,15 @@
 
 
 
+
 // Layout
+
 @import 'layout/container';
 @import 'layout/headings';
 @import 'layout/wrapper';
 @import 'layout/box';
 @import 'layout/accordion';
+@import 'layout/modal.scss';
 
 // Pages
 
@@ -35,7 +38,9 @@
 @import 'pages/musiqueDesPlantes';
 @import 'pages/ajoutPlante';
 @import 'pages/herbier';
+@import 'pages/repertoire';
 
 
 // shame : css à trier 
+
 @import 'shame';
