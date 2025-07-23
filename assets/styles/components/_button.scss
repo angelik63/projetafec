@@ -62,32 +62,67 @@
   } 
 }
 
-.search-bar input[type="search"] {
-    flex-grow: 1;
-    padding: 12px 15px;
-    border: none;
-    font-size: $font-size-sm;
-    @media(min-width : 1024px){
-    font-size: 1em;
+.search-bar {
+    opacity: 0;
+    visibility: hidden;
+    height: 0; 
+    transition: opacity 0.3s ease, visibility 0.3s ease, height 0.3s ease; 
+    overflow: hidden; 
+
+    width: 100px; 
+    margin: 10px auto; 
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex; 
+
+
+    @media (min-width: 1024px) {
+        width: 500px;
+    }
+
+    
+    input[type="text"], input[type="search"] { 
+        flex-grow: 1; 
+        padding: 12px 15px;
+        border: none;
+        font-size: $font-size-sm;
+        outline: none; 
+        -webkit-appearance: none;
+        appearance: none;
+
+        @media(min-width : 1024px){
+            font-size: 1em;
+        }
+    }
+
+  
+    button {
+        background-color: $color-orange;
+        color: $color-white;
+        border: none;
+        padding: 12px 20px;
+        font-size: $font-size-sm;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        flex-shrink: 0; 
+
+        &:hover {
+            background-color: darken($color-orange, 10%); 
+        }
+    }
+
+    
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        height: auto; 
+        
     }
 }
 
-.search-bar button {
-    background-color: $color-orange;
-    color: $color-white;
-    border: none;
-    padding: 12px 20px;
-    font-size: $font-size-sm;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.search-bar button:hover {
-    background-color:$color-orange;
-} 
 
 #myBtn {
-    background-color: $color-orange; 
+    background-color: $color-orange;
     color: white;
     border: solid red 2px;
 }
@@ -100,14 +135,5 @@
     cursor: pointer;
     font-size: 24px;
     margin: 10px;
-}
-
-.search-bar {
-    margin: 10px;
-    display: none;
-}
-
-.search-bar input {
-    padding: 8px;
-    width: 200px;
+    
 }

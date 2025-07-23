@@ -97,7 +97,15 @@
   padding: $padding-box;
   margin-bottom: 50px;
   border:2px solid black;
+ transition: all 0.3s ease-in-out;
+ &:hover {
+    background-color: rgb(242, 243, 241); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); 
+    transform: translateY(-5px); 
+    border: 4px solid $color-pink; 
+    cursor: pointer; 
 
+     }
 }
 @mixin box-base-desktop {
   line-height: $font-line-height;

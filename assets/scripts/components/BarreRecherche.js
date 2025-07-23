@@ -1,39 +1,43 @@
 document.addEventListener('DOMContentLoaded', function() {
     const loupeElement = document.getElementById('loupe');
     const searchBarForm = document.querySelector('.search-bar');
+    const plantSearchInput = document.getElementById('plantSearchInput'); 
 
-    // Fonction pour basculer l'affichage de la barre de recherche
+    
+    if (!loupeElement || !searchBarForm || !plantSearchInput) {
+        console.error("Erreur: Un ou plusieurs éléments DOM requis pour la recherche sont introuvables. Vérifiez les ID et classes.");
+        return; 
+    }
+
+    // Fonction pour basculer la classe 'active'
     function toggleSearchBar() {
-        if (searchBarForm.style.display === 'none') {
-            searchBarForm.style.display = 'block'; // Affiche la barre de recherche
-            document.getElementById('plantSearchInput').focus(); // Met le focus sur le champ de recherche
+        searchBarForm.classList.toggle('active'); 
+
+        if (searchBarForm.classList.contains('active')) {
+            plantSearchInput.focus();
         } else {
-            searchBarForm.style.display = 'none'; // Masque la barre de recherche
+            plantSearchInput.value = '';
         }
     }
 
-    // Ajoute un écouteur d'événement pour le clic sur la loupe
-    if (loupeElement) {
-        loupeElement.addEventListener('click', function(event) {
-            event.stopPropagation(); // Empêche le clic de se propager
-            toggleSearchBar();
-        });
-    }
+   
+    loupeElement.addEventListener('click', function(event) {
+        event.stopPropagation();
+        toggleSearchBar();
+    });
 
-    // Gérer les clics en dehors de la barre de recherche pour la fermer
+  
     document.addEventListener('click', function(event) {
         const isClickInsideSearchBar = searchBarForm.contains(event.target);
         const isClickOnLoupe = loupeElement.contains(event.target);
 
-        if (!isClickInsideSearchBar && !isClickOnLoupe && searchBarForm.style.display === 'block') {
+        if (!isClickInsideSearchBar && !isClickOnLoupe && searchBarForm.classList.contains('active')) {
             toggleSearchBar();
         }
     });
 
-    // Empêcher la fermeture quand on clique dans la barre de recherche elle-même
-    if (searchBarForm) {
-        searchBarForm.addEventListener('click', function(event) {
-            event.stopPropagation(); // Empêche le clic de se propager au document
-        });
-    }
+    // Empêcher la fermeture quand on clique à l'intérieur de la barre de recherche elle-même
+    searchBarForm.addEventListener('click', function(event) {
+        event.stopPropagation(); 
+    });
 });

@@ -10,6 +10,7 @@
     $font-size-title: 32px;
     $font-size-soustitre: 28px;
     $font-size-h3: 22px;
+    $font-size-subtitle: 20px;
     $font-size-base: 16px;
     $font-size-sm: 14px;
     $font-size-xs:  10px;
@@ -24,7 +25,9 @@
 
   /* le gras  (c'est la vie)*/
     $font-weight-title:800;
+    $font-weigth-subtitle:600;
 
   /*  interligne  */
 
-  $font-line-height: 2em;
+  $font-line-height: 1.7em;
+  $font-line-height-box: 1.7em;

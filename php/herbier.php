@@ -8,6 +8,7 @@ require_once("config/setting.php"); ?>
     <title>Arroso'Moi</title>
     <meta name="description" content="Site de conseil et de suivi d'arrosage pour vos plantes" />
   </head>
+  <?php include ('layout/modalNotification.php'); ?>
   <body>
    <?php include ('layout/header.php'); ?>
     <main>
