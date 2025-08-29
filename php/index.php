@@ -243,8 +243,8 @@ $repBotanique = $stmt->fetchAll();
       
       <div class="container-decouverte">
         <section class="box-music">
+          <a href="musiqueDesPlantes.php">
           <div class="music">
-            <a href="musiqueDesPlantes.php">
               <h2>Découverte de la musique des plantes</h2>
               <svg
                 class="logo-entre"
@@ -294,12 +294,12 @@ l145 -23 10850 0 c10361 0 10856 1 10975 18 847 121 1569 590 2018 1310 231
                   />
                 </g>
               </svg>
-            </a>
-          </div>
+            </div>
+          </a>
         </section>
         <section class="box-bbg">
+          <a href="soinDesPlantes.php">
           <div class="bbg">
-            <a href="soinDesPlantes.php">
               <h2>Découverte des soins de façon vertueuse</h2>
               <svg
                 class="logo-entre"
@@ -349,8 +349,8 @@ l145 -23 10850 0 c10361 0 10856 1 10975 18 847 121 1569 590 2018 1310 231
                   />
                 </g>
               </svg>
-            </a>
-          </div>
+            </div>
+          </a>
         </section>
       </div>
     </main>
